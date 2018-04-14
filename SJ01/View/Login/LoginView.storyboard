@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="dic-5F-2kn">
+            <objects>
+                <viewController storyboardIdentifier="LoginView" id="dHY-80-gWm" customClass="LoginViewController" customModule="SJ01" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ktS-zN-Rjc"/>
+                        <viewControllerLayoutGuide type="bottom" id="xmU-mJ-cFb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Fd9-bv-zHy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ログイン画面" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rIE-w7-0WN">
+                                <rect key="frame" x="46" y="183.5" width="283" height="300"/>
+                                <color key="backgroundColor" red="0.74628936930000001" green="1" blue="0.82717906740000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="3V6-0z-7ep"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rIE-w7-0WN" firstAttribute="centerY" secondItem="Fd9-bv-zHy" secondAttribute="centerY" id="NvJ-uI-3rE"/>
+                            <constraint firstItem="rIE-w7-0WN" firstAttribute="leading" secondItem="Fd9-bv-zHy" secondAttribute="leadingMargin" constant="30" id="bsg-rp-9qH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rIE-w7-0WN" secondAttribute="trailing" constant="30" id="utD-NV-cPu"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mF7-n3-E3w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="54" y="141"/>
+        </scene>
+    </scenes>
+</document>

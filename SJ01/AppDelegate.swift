@@ -8,15 +8,27 @@
 
 import UIKit
 import CoreData
+import RealmSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var navigationController: UINavigationController?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // Navigation Controller
+        let storyboard: UIStoryboard = UIStoryboard(name: "LoginView", bundle: nil)
+        let view = storyboard.instantiateViewController(withIdentifier: "LoginView") as! LoginViewController
+        navigationController = UINavigationController(rootViewController: view)
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.rootViewController = navigationController
+        self.window?.makeKeyAndVisible()
+
+        // Migration
+        self.realmMigration()
         return true
     }
 
@@ -89,5 +101,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
 
+    // Realm Migration
+    func realmMigration () {
+        let config = Realm.Configuration(
+            schemaVersion: 1,
+            migrationBlock: { migration, oldSchemaVersion in
+                if (oldSchemaVersion < 1) {
+                    
+                }
+        })
+        Realm.Configuration.defaultConfiguration = config
+        _ = try! Realm()
+    }
 }
 
