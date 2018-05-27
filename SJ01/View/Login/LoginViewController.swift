@@ -36,6 +36,11 @@ class LoginViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
+    @IBAction func LoginButtonTap(_ sender: Any) {
+        let storyboard: UIStoryboard = UIStoryboard(name: "HomeView",bundle:nil)
+        let view = storyboard.instantiateViewController(withIdentifier: "HomeView")as! HomeViewController
+        self.present(UINavigationController(rootViewController: view),animated: true, completion: nil)
+    }
     func loadAddressURL() {
         DataManager().fetchUser(completion: {(success, data) in
             if success {
