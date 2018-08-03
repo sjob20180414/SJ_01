@@ -10,6 +10,7 @@
 		1617B5EF20BA830700DEE046 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1617B5EE20BA830700DEE046 /* HomeViewController.swift */; };
 		1617B5F120BA833500DEE046 /* HomeView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1617B5F020BA833500DEE046 /* HomeView.storyboard */; };
 		A8109C3E608DC5B3B0E6BBEB /* Pods_SJ01.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C1FC7352E5755D08257D168 /* Pods_SJ01.framework */; };
+		DC59051820DE0D5600C3ECBE /* ColorConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC59051720DE0D5600C3ECBE /* ColorConst.swift */; };
 		DC62E18A208219F1004D57A5 /* LoginView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC62E189208219F1004D57A5 /* LoginView.storyboard */; };
 		DC831A462081D9C000D76A56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC831A452081D9C000D76A56 /* AppDelegate.swift */; };
 		DC831A482081D9C000D76A56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC831A472081D9C000D76A56 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 		DC831A4E2081D9C000D76A56 /* SJ01.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DC831A4C2081D9C000D76A56 /* SJ01.xcdatamodeld */; };
 		DC831A502081D9C000D76A56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC831A4F2081D9C000D76A56 /* Assets.xcassets */; };
 		DC831A532081D9C000D76A56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC831A512081D9C000D76A56 /* LaunchScreen.storyboard */; };
+		DC8E928E20DE198900F51E40 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8E928D20DE198900F51E40 /* CustomNavigationBar.swift */; };
 		DCA72E832082133900057BA3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA72E822082133900057BA3 /* LoginViewController.swift */; };
 		DCA72E8B208213AF00057BA3 /* RemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA72E88208213AE00057BA3 /* RemoteDataManager.swift */; };
 		DCA72E8C208213AF00057BA3 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA72E89208213AE00057BA3 /* DataManager.swift */; };
@@ -24,6 +26,7 @@
 		DCA72E912082143000057BA3 /* Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA72E8F2082143000057BA3 /* Custom.swift */; };
 		DCA72E922082143000057BA3 /* ApiUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA72E902082143000057BA3 /* ApiUtils.swift */; };
 		DCA72E95208214D200057BA3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA72E94208214D200057BA3 /* User.swift */; };
+		DCAC463B20DDFE220020727A /* SuperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAC463A20DDFE220020727A /* SuperViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,7 @@
 		6B6BC102A9B04F21FBC8F2F2 /* Pods-SJ01.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SJ01.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SJ01/Pods-SJ01.debug.xcconfig"; sourceTree = "<group>"; };
 		9C1FC7352E5755D08257D168 /* Pods_SJ01.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SJ01.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF6437D2ABB6DB0A0ACA4E7C /* Pods-SJ01.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SJ01.release.xcconfig"; path = "Pods/Target Support Files/Pods-SJ01/Pods-SJ01.release.xcconfig"; sourceTree = "<group>"; };
+		DC59051720DE0D5600C3ECBE /* ColorConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorConst.swift; sourceTree = "<group>"; };
 		DC62E189208219F1004D57A5 /* LoginView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginView.storyboard; sourceTree = "<group>"; };
 		DC831A422081D9BF00D76A56 /* SJ01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SJ01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC831A452081D9C000D76A56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +45,7 @@
 		DC831A4F2081D9C000D76A56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC831A522081D9C000D76A56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC831A542081D9C000D76A56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC8E928D20DE198900F51E40 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
 		DCA72E822082133900057BA3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DCA72E88208213AE00057BA3 /* RemoteDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteDataManager.swift; sourceTree = "<group>"; };
 		DCA72E89208213AE00057BA3 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
@@ -48,6 +53,7 @@
 		DCA72E8F2082143000057BA3 /* Custom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Custom.swift; sourceTree = "<group>"; };
 		DCA72E902082143000057BA3 /* ApiUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiUtils.swift; sourceTree = "<group>"; };
 		DCA72E94208214D200057BA3 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DCAC463A20DDFE220020727A /* SuperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +94,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DC59051620DE0D1E00C3ECBE /* Const */ = {
+			isa = PBXGroup;
+			children = (
+				DC59051720DE0D5600C3ECBE /* ColorConst.swift */,
+			);
+			path = Const;
+			sourceTree = "<group>";
+		};
 		DC831A392081D9BF00D76A56 = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +126,7 @@
 				DCA72E842082134200057BA3 /* View */,
 				DCA72E872082139600057BA3 /* Manager */,
 				DCA72E93208214A200057BA3 /* Model */,
+				DC59051620DE0D1E00C3ECBE /* Const */,
 				DCA72E8E2082141600057BA3 /* Utils */,
 				DC831A452081D9C000D76A56 /* AppDelegate.swift */,
 				DC831A472081D9C000D76A56 /* ViewController.swift */,
@@ -136,6 +151,7 @@
 		DCA72E842082134200057BA3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DCAC463A20DDFE220020727A /* SuperViewController.swift */,
 				1617B5ED20BA82D700DEE046 /* Home */,
 				DCA72E812082130800057BA3 /* Login */,
 			);
@@ -158,6 +174,7 @@
 			children = (
 				DCA72E902082143000057BA3 /* ApiUtils.swift */,
 				DCA72E8F2082143000057BA3 /* Custom.swift */,
+				DC8E928D20DE198900F51E40 /* CustomNavigationBar.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -306,15 +323,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCA72E8B208213AF00057BA3 /* RemoteDataManager.swift in Sources */,
+				DC59051820DE0D5600C3ECBE /* ColorConst.swift in Sources */,
 				DCA72E8D208213AF00057BA3 /* LocalDataManager.swift in Sources */,
 				DCA72E912082143000057BA3 /* Custom.swift in Sources */,
 				DCA72E922082143000057BA3 /* ApiUtils.swift in Sources */,
 				DCA72E8C208213AF00057BA3 /* DataManager.swift in Sources */,
+				DC8E928E20DE198900F51E40 /* CustomNavigationBar.swift in Sources */,
 				DCA72E832082133900057BA3 /* LoginViewController.swift in Sources */,
 				DC831A482081D9C000D76A56 /* ViewController.swift in Sources */,
 				1617B5EF20BA830700DEE046 /* HomeViewController.swift in Sources */,
 				DC831A4E2081D9C000D76A56 /* SJ01.xcdatamodeld in Sources */,
 				DCA72E95208214D200057BA3 /* User.swift in Sources */,
+				DCAC463B20DDFE220020727A /* SuperViewController.swift in Sources */,
 				DC831A462081D9C000D76A56 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

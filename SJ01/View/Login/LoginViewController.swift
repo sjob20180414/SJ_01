@@ -9,23 +9,22 @@
 import Foundation
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: SuperViewController {
     
     var leftBarButton: UIBarButtonItem!
     var rightBarButton: UIBarButtonItem!
+    
+    @IBOutlet weak var idTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.navigationItem.title = "ログイン"
+        self.idTextField.placeholder = "ID"
+        self.passwordTextField.placeholder = "パスワード"
         
-        leftBarButton = UIBarButtonItem(title: "<", style: .plain, target: self, action: nil)//#selector(LoginViewController.tappedLeftBarButton))
-        
-        rightBarButton = UIBarButtonItem(title: ">", style: .plain, target: self, action: nil)//#selector(LoginViewController.tappedRightBarButton))
-        
-        self.navigationItem.leftBarButtonItem = leftBarButton
-        self.navigationItem.rightBarButtonItem = rightBarButton
-        
+        setNavigationButton(vc: self, type: .login)
         self.view.backgroundColor = UIColor.white
         
         // 通信試験
@@ -39,6 +38,7 @@ class LoginViewController: UIViewController {
     @IBAction func LoginButtonTap(_ sender: Any) {
         let storyboard: UIStoryboard = UIStoryboard(name: "HomeView",bundle:nil)
         let view = storyboard.instantiateViewController(withIdentifier: "HomeView")as! HomeViewController
+        view.modalTransitionStyle = .flipHorizontal
         self.present(UINavigationController(rootViewController: view),animated: true, completion: nil)
     }
     func loadAddressURL() {

@@ -9,23 +9,20 @@
 import Foundation
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: SuperViewController {
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.navigationItem.title = "HOME"
-        
-        
+        setNavigationButton(vc: self, type: .home)
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
-    
 }
+
 
 
