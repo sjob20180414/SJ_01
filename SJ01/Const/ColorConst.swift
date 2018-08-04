@@ -11,6 +11,7 @@ import UIKit
 
 // Main Color
 let COlOR_MAIN = UIColor(hex: "FA966E")
+let BASE_FONT = "cinecaption"
 
 extension UIColor {
     convenience init(hex: String, alpha: CGFloat) {

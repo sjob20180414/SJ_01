@@ -25,7 +25,8 @@ class SuperViewController: UIViewController {
         
         vc.navigationController?.navigationBar.barTintColor = UIColor.white
         vc.navigationController?.navigationBar.tintColor = COlOR_MAIN
-        vc.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor : COlOR_MAIN]
+        vc.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor : COlOR_MAIN,
+            NSAttributedStringKey.font: UIFont(name: BASE_FONT, size: 25)!]
         vc.navigationController?.navigationBar.frame =
             CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 280)
         

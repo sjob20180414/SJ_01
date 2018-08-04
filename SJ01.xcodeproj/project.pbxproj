@@ -28,6 +28,7 @@
 		DCA72E95208214D200057BA3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA72E94208214D200057BA3 /* User.swift */; };
 		DCAC463B20DDFE220020727A /* SuperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAC463A20DDFE220020727A /* SuperViewController.swift */; };
 		DCD525FC2115237A0045C848 /* cinecaption227.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DCD525FB2115232B0045C848 /* cinecaption227.ttf */; };
+		DCD525FF211538210045C848 /* NoticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD525FE211538210045C848 /* NoticeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		DCA72E94208214D200057BA3 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DCAC463A20DDFE220020727A /* SuperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperViewController.swift; sourceTree = "<group>"; };
 		DCD525FB2115232B0045C848 /* cinecaption227.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = cinecaption227.ttf; sourceTree = "<group>"; };
+		DCD525FE211538210045C848 /* NoticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,8 +157,9 @@
 			isa = PBXGroup;
 			children = (
 				DCAC463A20DDFE220020727A /* SuperViewController.swift */,
-				1617B5ED20BA82D700DEE046 /* Home */,
 				DCA72E812082130800057BA3 /* Login */,
+				1617B5ED20BA82D700DEE046 /* Home */,
+				DCD525FD211537F80045C848 /* Notice */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -188,6 +191,14 @@
 				DCA72E94208214D200057BA3 /* User.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		DCD525FD211537F80045C848 /* Notice */ = {
+			isa = PBXGroup;
+			children = (
+				DCD525FE211538210045C848 /* NoticeViewController.swift */,
+			);
+			path = Notice;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,6 +341,7 @@
 				DC59051820DE0D5600C3ECBE /* ColorConst.swift in Sources */,
 				DCA72E8D208213AF00057BA3 /* LocalDataManager.swift in Sources */,
 				DCA72E912082143000057BA3 /* Custom.swift in Sources */,
+				DCD525FF211538210045C848 /* NoticeViewController.swift in Sources */,
 				DCA72E922082143000057BA3 /* ApiUtils.swift in Sources */,
 				DCA72E8C208213AF00057BA3 /* DataManager.swift in Sources */,
 				DC8E928E20DE198900F51E40 /* CustomNavigationBar.swift in Sources */,
