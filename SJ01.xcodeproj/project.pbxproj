@@ -27,6 +27,7 @@
 		DCA72E922082143000057BA3 /* ApiUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA72E902082143000057BA3 /* ApiUtils.swift */; };
 		DCA72E95208214D200057BA3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA72E94208214D200057BA3 /* User.swift */; };
 		DCAC463B20DDFE220020727A /* SuperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAC463A20DDFE220020727A /* SuperViewController.swift */; };
+		DCD525FC2115237A0045C848 /* cinecaption227.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DCD525FB2115232B0045C848 /* cinecaption227.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		DCA72E902082143000057BA3 /* ApiUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiUtils.swift; sourceTree = "<group>"; };
 		DCA72E94208214D200057BA3 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DCAC463A20DDFE220020727A /* SuperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperViewController.swift; sourceTree = "<group>"; };
+		DCD525FB2115232B0045C848 /* cinecaption227.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = cinecaption227.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 				DC831A512081D9C000D76A56 /* LaunchScreen.storyboard */,
 				DC831A542081D9C000D76A56 /* Info.plist */,
 				DC831A4C2081D9C000D76A56 /* SJ01.xcdatamodeld */,
+				DCD525FB2115232B0045C848 /* cinecaption227.ttf */,
 			);
 			path = SJ01;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCD525FC2115237A0045C848 /* cinecaption227.ttf in Resources */,
 				1617B5F120BA833500DEE046 /* HomeView.storyboard in Resources */,
 				DC831A532081D9C000D76A56 /* LaunchScreen.storyboard in Resources */,
 				DC831A502081D9C000D76A56 /* Assets.xcassets in Resources */,
