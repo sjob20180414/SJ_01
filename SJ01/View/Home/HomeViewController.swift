@@ -31,6 +31,16 @@ class HomeViewController: SuperViewController, UITableViewDelegate, UITableViewD
         return self.testData!.count;
     }
     
+    @IBAction func weeklyReportButtonTap(_ sender: Any) {
+        let storyboard: UIStoryboard = UIStoryboard(name: "WeeklyReport",bundle:nil)
+        let view = storyboard.instantiateViewController(withIdentifier: "WeeklyReportView")as! WeeklyReportViewController
+        self.present(UINavigationController(rootViewController: view),animated: true, completion: nil)
+    }
+    
+    @IBAction func chatButtonTap(_ sender: UIButton) {
+        testDialog(sender: sender)
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let notice = self.testData![indexPath.row] as Notice
         

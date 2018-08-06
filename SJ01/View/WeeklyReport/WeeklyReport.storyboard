@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="cinecaption227.ttf">
+            <string>cinecaption</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Weekly Report View Controller-->
+        <scene sceneID="gdl-3r-Ads">
+            <objects>
+                <viewController storyboardIdentifier="WeeklyReportView" id="VBd-45-mfK" customClass="WeeklyReportViewController" customModule="SJ01" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rlX-vO-p4g">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Alh-QV-SOc">
+                                <rect key="frame" x="0.0" y="698" width="375" height="80"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pgc-UP-eBe">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="bEU-jd-xBg"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NAx-hd-kew" customClass="CustomButton" customModule="SJ01" customModuleProvider="target">
+                                        <rect key="frame" x="77.666666666666686" y="12.666666666666629" width="220" height="55"/>
+                                        <color key="backgroundColor" red="0.40000000000000002" green="0.84313725490196079" blue="0.73333333333333328" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="220" id="QoW-R1-2dx"/>
+                                            <constraint firstAttribute="height" constant="55" id="sDa-RA-Mc6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="cinecaption" family="cinecaption" pointSize="20"/>
+                                        <state key="normal" title="週報確認・内容保存">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="NAx-hd-kew" firstAttribute="centerY" secondItem="Alh-QV-SOc" secondAttribute="centerY" id="Age-8f-wbC"/>
+                                    <constraint firstItem="Pgc-UP-eBe" firstAttribute="leading" secondItem="Alh-QV-SOc" secondAttribute="leading" id="QLa-UK-gx8"/>
+                                    <constraint firstItem="Pgc-UP-eBe" firstAttribute="top" secondItem="Alh-QV-SOc" secondAttribute="top" id="aep-Do-nCc"/>
+                                    <constraint firstAttribute="height" constant="80" id="fEf-jN-sj7"/>
+                                    <constraint firstAttribute="trailing" secondItem="Pgc-UP-eBe" secondAttribute="trailing" id="sJa-yv-wwI"/>
+                                    <constraint firstItem="NAx-hd-kew" firstAttribute="centerX" secondItem="Alh-QV-SOc" secondAttribute="centerX" id="t7g-eU-Yu5"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mKt-be-gjh">
+                                <rect key="frame" x="0.0" y="44" width="375" height="654"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="WeeklyReportTitleAndTextTypeCell" rowHeight="102" id="Eem-MI-dH4" customClass="WeeklyReportTitleAndTextTypeCell" customModule="SJ01" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="102"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Eem-MI-dH4" id="FMw-5L-OlP">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="102"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wQ2-XR-MEy">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="42"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="【担当営業】" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfY-oJ-Tbq">
+                                                            <rect key="frame" x="20" y="11.666666666666664" width="335" height="20"/>
+                                                            <fontDescription key="fontDescription" name="cinecaption" family="cinecaption" pointSize="20"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.98039215690000003" green="0.58823529409999997" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="pfY-oJ-Tbq" secondAttribute="trailing" constant="20" id="9y6-Tc-Fgh"/>
+                                                        <constraint firstItem="pfY-oJ-Tbq" firstAttribute="centerY" secondItem="wQ2-XR-MEy" secondAttribute="centerY" id="SZE-uL-hOo"/>
+                                                        <constraint firstItem="pfY-oJ-Tbq" firstAttribute="leading" secondItem="wQ2-XR-MEy" secondAttribute="leading" constant="20" id="WBL-lJ-cwi"/>
+                                                        <constraint firstAttribute="height" constant="42" id="cLF-ge-clQ"/>
+                                                    </constraints>
+                                                </view>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JcI-9Q-j0O">
+                                                    <rect key="frame" x="20" y="50" width="335" height="33"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" name="cinecaption" family="cinecaption" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="wQ2-XR-MEy" firstAttribute="leading" secondItem="FMw-5L-OlP" secondAttribute="leading" id="COG-6c-UvS"/>
+                                                <constraint firstItem="wQ2-XR-MEy" firstAttribute="top" secondItem="FMw-5L-OlP" secondAttribute="top" id="FSf-lh-CXQ"/>
+                                                <constraint firstAttribute="trailing" secondItem="wQ2-XR-MEy" secondAttribute="trailing" id="Olw-Bb-9hY"/>
+                                                <constraint firstItem="JcI-9Q-j0O" firstAttribute="top" secondItem="wQ2-XR-MEy" secondAttribute="bottom" constant="8" id="nHr-EO-Azg"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="JcI-9Q-j0O" secondAttribute="trailing" constant="5" id="oHf-rC-LJp"/>
+                                                <constraint firstItem="JcI-9Q-j0O" firstAttribute="leading" secondItem="FMw-5L-OlP" secondAttribute="leadingMargin" constant="5" id="pBU-X3-LUN"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="JcI-9Q-j0O" secondAttribute="bottom" constant="8" id="xI2-m4-rjc"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="textView" destination="JcI-9Q-j0O" id="Ytl-qw-Uwl"/>
+                                            <outlet property="title" destination="pfY-oJ-Tbq" id="DDf-LP-Tqn"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="WeeklyReportTitleOnlyTypeCell" rowHeight="42" id="ldh-ir-HCm" userLabel="WeeklyReportTitleOnlyTypeCell" customClass="WeeklyReportTitleOnlyTypeCell" customModule="SJ01" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="130" width="375" height="42"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ldh-ir-HCm" id="uvG-jq-XLg">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="42"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8vx-v6-Xxx">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="42"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="【作業現場】" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fe-xL-Cy4">
+                                                            <rect key="frame" x="20" y="11.666666666666664" width="335" height="20"/>
+                                                            <fontDescription key="fontDescription" name="cinecaption" family="cinecaption" pointSize="20"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.98039215690000003" green="0.58823529409999997" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <constraints>
+                                                        <constraint firstItem="6fe-xL-Cy4" firstAttribute="centerY" secondItem="8vx-v6-Xxx" secondAttribute="centerY" id="3yO-Mu-apI"/>
+                                                        <constraint firstItem="6fe-xL-Cy4" firstAttribute="leading" secondItem="8vx-v6-Xxx" secondAttribute="leading" constant="20" id="FNY-Yw-Ldf"/>
+                                                        <constraint firstAttribute="trailing" secondItem="6fe-xL-Cy4" secondAttribute="trailing" constant="20" id="apI-g9-CpZ"/>
+                                                        <constraint firstAttribute="height" constant="42" id="wUe-tN-hc5"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="8vx-v6-Xxx" firstAttribute="top" secondItem="uvG-jq-XLg" secondAttribute="top" id="74H-cZ-taB"/>
+                                                <constraint firstAttribute="trailing" secondItem="8vx-v6-Xxx" secondAttribute="trailing" id="bg9-L1-vmM"/>
+                                                <constraint firstItem="8vx-v6-Xxx" firstAttribute="leading" secondItem="uvG-jq-XLg" secondAttribute="leading" id="yeN-CN-F5R"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="title" destination="6fe-xL-Cy4" id="ukX-Kg-IQD"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="WeeklyReportTextTypeCell" rowHeight="82" id="isU-51-4fi" customClass="WeeklyReportTextTypeCell" customModule="SJ01" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="172" width="375" height="82"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="isU-51-4fi" id="51M-2M-1dk">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="82"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="場所" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sxY-En-6Av">
+                                                    <rect key="frame" x="25" y="16" width="34" height="17"/>
+                                                    <fontDescription key="fontDescription" name="cinecaption" family="cinecaption" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hnf-K6-WNj">
+                                                    <rect key="frame" x="20" y="41" width="335" height="33"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" name="cinecaption" family="cinecaption" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Hnf-K6-WNj" firstAttribute="leading" secondItem="51M-2M-1dk" secondAttribute="leading" constant="20" id="Kq0-TV-tTp"/>
+                                                <constraint firstItem="sxY-En-6Av" firstAttribute="leading" secondItem="51M-2M-1dk" secondAttribute="leadingMargin" constant="10" id="TQv-kx-fd0"/>
+                                                <constraint firstItem="Hnf-K6-WNj" firstAttribute="top" secondItem="sxY-En-6Av" secondAttribute="bottom" constant="8" id="bKF-kq-4tz"/>
+                                                <constraint firstAttribute="trailing" secondItem="Hnf-K6-WNj" secondAttribute="trailing" constant="20" id="o9g-tI-3dN"/>
+                                                <constraint firstItem="sxY-En-6Av" firstAttribute="top" secondItem="51M-2M-1dk" secondAttribute="topMargin" constant="5" id="uyr-2I-qSD"/>
+                                                <constraint firstAttribute="bottom" secondItem="Hnf-K6-WNj" secondAttribute="bottom" constant="8" id="vep-Kz-HSp"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="itemLabel" destination="sxY-En-6Av" id="deh-gx-sHX"/>
+                                            <outlet property="textView" destination="Hnf-K6-WNj" id="ba6-Nt-1H8"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="VBd-45-mfK" id="8F7-80-Lo7"/>
+                                    <outlet property="delegate" destination="VBd-45-mfK" id="rjI-MX-WX0"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mKt-be-gjh" firstAttribute="leading" secondItem="TQq-8u-U5J" secondAttribute="leading" id="4Re-IR-tcc"/>
+                            <constraint firstItem="Alh-QV-SOc" firstAttribute="bottom" secondItem="TQq-8u-U5J" secondAttribute="bottom" id="5zU-qJ-m6y"/>
+                            <constraint firstItem="Alh-QV-SOc" firstAttribute="top" secondItem="mKt-be-gjh" secondAttribute="bottom" id="Y5W-i9-IKJ"/>
+                            <constraint firstItem="Alh-QV-SOc" firstAttribute="leading" secondItem="TQq-8u-U5J" secondAttribute="leading" id="gh9-H9-Ztk"/>
+                            <constraint firstItem="TQq-8u-U5J" firstAttribute="trailing" secondItem="mKt-be-gjh" secondAttribute="trailing" id="ksg-FD-Qgk"/>
+                            <constraint firstItem="TQq-8u-U5J" firstAttribute="trailing" secondItem="Alh-QV-SOc" secondAttribute="trailing" id="nkK-h4-0Ef"/>
+                            <constraint firstItem="mKt-be-gjh" firstAttribute="top" secondItem="TQq-8u-U5J" secondAttribute="top" id="ogZ-bY-ysw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TQq-8u-U5J"/>
+                    </view>
+                    <connections>
+                        <outlet property="confirmationButtonView" destination="Alh-QV-SOc" id="PqB-4q-2Xa"/>
+                        <outlet property="viewConstraint" destination="Y5W-i9-IKJ" id="L0g-Tv-nJ9"/>
+                        <outlet property="weeklyReportTableView" destination="mKt-be-gjh" id="Npq-nm-ej4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QbM-HF-6UE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4" y="186.94581280788179"/>
+        </scene>
+    </scenes>
+</document>

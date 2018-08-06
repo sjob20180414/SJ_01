@@ -15,6 +15,9 @@ class User: Object {
     @objc dynamic var name = ""
     @objc dynamic var createdAt = 0
     
+    override static func primaryKey() -> String? {
+        return "id"
+    }
 }
 
 class UserObject: Mappable {

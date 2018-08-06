@@ -24,26 +24,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Fz-fu-CqA" customClass="CustomView" customModule="SJ01" customModuleProvider="target">
-                                <rect key="frame" x="37" y="256" width="300" height="300"/>
+                                <rect key="frame" x="37" y="259" width="300" height="312"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ruH-Vm-Ur5">
-                                        <rect key="frame" x="20" y="20" width="260" height="30"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ruH-Vm-Ur5">
+                                        <rect key="frame" x="20" y="20" width="260" height="35"/>
                                         <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="Ck5-SG-haS"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="ccH-2E-uRk"/>
                                         </constraints>
                                         <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" name="cinecaption" family="cinecaption" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qs6-Tv-dQd" customClass="CustomButton" customModule="SJ01" customModuleProvider="target">
-                                        <rect key="frame" x="90" y="110" width="120" height="40"/>
+                                        <rect key="frame" x="75" y="120" width="150" height="50"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="RJH-tY-LDQ"/>
-                                            <constraint firstAttribute="width" constant="120" id="W40-bL-mHE"/>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="pzX-Y6-rdB"/>
+                                            <constraint firstAttribute="height" constant="50" id="RJH-tY-LDQ"/>
+                                            <constraint firstAttribute="width" constant="150" id="W40-bL-mHE"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="cinecaption" family="cinecaption" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="cinecaption" family="cinecaption" pointSize="23"/>
                                         <state key="normal" title="ログイン">
                                             <color key="titleColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -57,27 +57,29 @@
                                         </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oGc-Wu-Rd9">
-                                        <rect key="frame" x="20" y="60" width="260" height="30"/>
+                                        <rect key="frame" x="20" y="65" width="260" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="Agg-YA-oD0"/>
+                                        </constraints>
                                         <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <fontDescription key="fontDescription" name="cinecaption" family="cinecaption" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQo-lu-yfX">
-                                        <rect key="frame" x="22.666666666666657" y="180" width="254.99999999999997" height="29"/>
+                                        <rect key="frame" x="22.666666666666657" y="190" width="254.99999999999997" height="32"/>
                                         <fontDescription key="fontDescription" name="cinecaption" family="cinecaption" pointSize="17"/>
                                         <state key="normal" title="パスワードをお忘れの方はこちら">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZGu-8j-oui" customClass="CustomButton" customModule="SJ01" customModuleProvider="target">
-                                        <rect key="frame" x="90" y="229" width="120" height="40"/>
+                                        <rect key="frame" x="75" y="242" width="150" height="50"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="Irt-99-Pn7"/>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="ka0-2D-A8X"/>
-                                            <constraint firstAttribute="width" constant="120" id="lsG-rL-AqI"/>
+                                            <constraint firstAttribute="height" constant="50" id="Irt-99-Pn7"/>
+                                            <constraint firstAttribute="width" constant="150" id="lsG-rL-AqI"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="cinecaption" family="cinecaption" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="cinecaption" family="cinecaption" pointSize="23"/>
                                         <state key="normal" title="新規登録">
                                             <color key="titleColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -94,16 +96,16 @@
                                     <constraint firstItem="ZGu-8j-oui" firstAttribute="centerX" secondItem="9Fz-fu-CqA" secondAttribute="centerX" id="IvX-CB-HwP"/>
                                     <constraint firstItem="qs6-Tv-dQd" firstAttribute="centerX" secondItem="9Fz-fu-CqA" secondAttribute="centerX" id="Pj0-yJ-lpL"/>
                                     <constraint firstItem="oGc-Wu-Rd9" firstAttribute="leading" secondItem="9Fz-fu-CqA" secondAttribute="leading" constant="20" id="REQ-EQ-Gqh"/>
-                                    <constraint firstItem="gQo-lu-yfX" firstAttribute="top" secondItem="qs6-Tv-dQd" secondAttribute="bottom" constant="30" id="XjF-j2-WM9"/>
+                                    <constraint firstItem="gQo-lu-yfX" firstAttribute="top" secondItem="qs6-Tv-dQd" secondAttribute="bottom" constant="20" id="XjF-j2-WM9"/>
                                     <constraint firstItem="qs6-Tv-dQd" firstAttribute="top" secondItem="oGc-Wu-Rd9" secondAttribute="bottom" constant="20" id="b59-yf-sxP"/>
                                     <constraint firstItem="ruH-Vm-Ur5" firstAttribute="leading" secondItem="9Fz-fu-CqA" secondAttribute="leading" constant="20" id="f2B-Qs-6sH"/>
                                     <constraint firstItem="gQo-lu-yfX" firstAttribute="centerX" secondItem="9Fz-fu-CqA" secondAttribute="centerX" id="obR-4j-lqb"/>
                                     <constraint firstItem="ruH-Vm-Ur5" firstAttribute="top" secondItem="9Fz-fu-CqA" secondAttribute="top" constant="20" id="qTZ-4G-r2E"/>
                                     <constraint firstItem="oGc-Wu-Rd9" firstAttribute="top" secondItem="ruH-Vm-Ur5" secondAttribute="bottom" constant="10" id="qiB-ho-HKN"/>
-                                    <constraint firstAttribute="height" constant="300" id="rvb-ea-QtF"/>
                                     <constraint firstAttribute="trailing" secondItem="oGc-Wu-Rd9" secondAttribute="trailing" constant="20" id="tkj-Tg-STY"/>
                                     <constraint firstAttribute="trailing" secondItem="ruH-Vm-Ur5" secondAttribute="trailing" constant="20" id="tlP-WE-jVE"/>
                                     <constraint firstAttribute="width" constant="300" id="vzz-VV-Cho"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZGu-8j-oui" secondAttribute="bottom" constant="20" id="w9p-f3-wPg"/>
                                     <constraint firstItem="ZGu-8j-oui" firstAttribute="top" secondItem="gQo-lu-yfX" secondAttribute="bottom" constant="20" id="xL6-Lb-gIc"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
@@ -112,11 +114,60 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dfu-Ta-PZK">
+                                <rect key="frame" x="50" y="94" width="275" height="140"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wuG-sR-nQy">
+                                        <rect key="frame" x="110" y="110" width="165" height="30"/>
+                                        <color key="backgroundColor" red="0.40000000000000002" green="0.84313725490000002" blue="0.73333333329999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="tio-LV-Je6"/>
+                                        </constraints>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MainIcon" translatesAutoresizingMaskIntoConstraints="NO" id="qmI-sp-WD2">
+                                        <rect key="frame" x="0.0" y="5" width="110" height="130"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="130" id="eKB-8k-VTu"/>
+                                            <constraint firstAttribute="width" constant="110" id="s8I-5K-iSW"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="報告" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JYn-MM-0o2">
+                                        <rect key="frame" x="110" y="0.0" width="165" height="93.333333333333329"/>
+                                        <fontDescription key="fontDescription" name="cinecaption" family="cinecaption" pointSize="80"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="アプリ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cYm-Kr-HxK">
+                                        <rect key="frame" x="110" y="93.333333333333343" width="165" height="60.666666666666657"/>
+                                        <fontDescription key="fontDescription" name="cinecaption" family="cinecaption" pointSize="52"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="wuG-sR-nQy" secondAttribute="bottom" id="8vG-P0-DhD"/>
+                                    <constraint firstAttribute="height" constant="140" id="I8B-sz-yzv"/>
+                                    <constraint firstAttribute="trailing" secondItem="JYn-MM-0o2" secondAttribute="trailing" id="OqE-aa-byL"/>
+                                    <constraint firstAttribute="trailing" secondItem="cYm-Kr-HxK" secondAttribute="trailing" id="Pc0-l2-oEL"/>
+                                    <constraint firstItem="cYm-Kr-HxK" firstAttribute="leading" secondItem="qmI-sp-WD2" secondAttribute="trailing" id="QWV-wT-8T0"/>
+                                    <constraint firstItem="cYm-Kr-HxK" firstAttribute="top" secondItem="JYn-MM-0o2" secondAttribute="bottom" id="RgF-sk-hvp"/>
+                                    <constraint firstItem="JYn-MM-0o2" firstAttribute="leading" secondItem="qmI-sp-WD2" secondAttribute="trailing" id="Rv8-pv-bzt"/>
+                                    <constraint firstItem="JYn-MM-0o2" firstAttribute="top" secondItem="dfu-Ta-PZK" secondAttribute="top" id="cNx-8f-Twi"/>
+                                    <constraint firstItem="wuG-sR-nQy" firstAttribute="leading" secondItem="dfu-Ta-PZK" secondAttribute="leading" constant="110" id="eNM-n4-ATa"/>
+                                    <constraint firstItem="qmI-sp-WD2" firstAttribute="centerY" secondItem="dfu-Ta-PZK" secondAttribute="centerY" id="gwy-Oh-ujw"/>
+                                    <constraint firstAttribute="trailing" secondItem="wuG-sR-nQy" secondAttribute="trailing" id="lRG-0U-iQa"/>
+                                    <constraint firstItem="qmI-sp-WD2" firstAttribute="leading" secondItem="dfu-Ta-PZK" secondAttribute="leading" id="o0E-u0-k9x"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="dfu-Ta-PZK" firstAttribute="leading" secondItem="ooV-Sn-MqA" secondAttribute="leading" constant="50" id="7J7-9z-GjD"/>
+                            <constraint firstItem="dfu-Ta-PZK" firstAttribute="top" secondItem="ooV-Sn-MqA" secondAttribute="top" constant="50" id="9Qg-dN-aoM"/>
+                            <constraint firstItem="9Fz-fu-CqA" firstAttribute="top" secondItem="dfu-Ta-PZK" secondAttribute="bottom" constant="25" id="Egm-7Z-igp"/>
+                            <constraint firstItem="ooV-Sn-MqA" firstAttribute="trailing" secondItem="dfu-Ta-PZK" secondAttribute="trailing" constant="50" id="I2x-BU-BtB"/>
                             <constraint firstItem="9Fz-fu-CqA" firstAttribute="centerX" secondItem="ooV-Sn-MqA" secondAttribute="centerX" id="YdW-Z7-BUi"/>
-                            <constraint firstItem="9Fz-fu-CqA" firstAttribute="centerY" secondItem="Fd9-bv-zHy" secondAttribute="centerY" id="kUg-4T-Ksw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ooV-Sn-MqA"/>
                     </view>
@@ -127,7 +178,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mF7-n3-E3w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53.600000000000001" y="139.880059970015"/>
+            <point key="canvasLocation" x="53.600000000000001" y="139.65517241379311"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="MainIcon" width="640" height="640"/>
+    </resources>
 </document>

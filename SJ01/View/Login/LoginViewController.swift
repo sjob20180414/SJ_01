@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import SlideMenuControllerSwift
 
 class LoginViewController: SuperViewController {
     
@@ -36,10 +37,7 @@ class LoginViewController: SuperViewController {
     }
     
     @IBAction func LoginButtonTap(_ sender: Any) {
-        let storyboard: UIStoryboard = UIStoryboard(name: "HomeView",bundle:nil)
-        let view = storyboard.instantiateViewController(withIdentifier: "HomeView")as! HomeViewController
-        view.modalTransitionStyle = .flipHorizontal
-        self.present(UINavigationController(rootViewController: view),animated: true, completion: nil)
+        presentHomeView()
     }
     func loadAddressURL() {
         DataManager().fetchUser(completion: {(success, data) in

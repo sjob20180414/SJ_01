@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="cinecaption227.ttf">
+            <string>cinecaption</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Dialog View Controller-->
+        <scene sceneID="kqu-w2-mms">
+            <objects>
+                <viewController storyboardIdentifier="DialogView" id="mqm-jS-3eE" customClass="DialogViewController" customModule="SJ01" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0MR-TD-TSd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NGh-z5-oyE">
+                                <rect key="frame" x="38" y="196" width="300" height="275"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DialoImage" translatesAutoresizingMaskIntoConstraints="NO" id="p1J-ZX-6XO">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="275"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ac3-pq-gr2" customClass="DialogCustomMessageView" customModule="SJ01" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="89" width="280" height="138"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQw-BT-q8y" customClass="CustomButton" customModule="SJ01" customModuleProvider="target">
+                                                <rect key="frame" x="100" y="100" width="80" height="35"/>
+                                                <color key="backgroundColor" red="0.51766183040000002" green="0.90951450889999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="Ubo-0W-Ne6"/>
+                                                    <constraint firstAttribute="height" constant="35" id="Wfa-c9-6oe"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="cinecaption" family="cinecaption" pointSize="17"/>
+                                                <state key="normal" title="閉じる">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <integer key="value" value="7"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="dismissDialog:" destination="mqm-jS-3eE" eventType="touchUpInside" id="U5u-8u-Sxx"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="メッセージ、メッセージ、メッセージ" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hGm-N4-RSv">
+                                                <rect key="frame" x="0.0" y="0.0" width="280" height="94"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="cinecaption" family="cinecaption" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="hQw-BT-q8y" secondAttribute="bottom" constant="3" id="HTz-lP-hoq"/>
+                                            <constraint firstItem="hQw-BT-q8y" firstAttribute="top" secondItem="hGm-N4-RSv" secondAttribute="bottom" constant="6" id="HWF-WB-wEE"/>
+                                            <constraint firstItem="hGm-N4-RSv" firstAttribute="top" secondItem="ac3-pq-gr2" secondAttribute="top" id="VWb-S3-1In"/>
+                                            <constraint firstItem="hQw-BT-q8y" firstAttribute="centerX" secondItem="ac3-pq-gr2" secondAttribute="centerX" id="opV-LH-fAn"/>
+                                            <constraint firstItem="hGm-N4-RSv" firstAttribute="leading" secondItem="ac3-pq-gr2" secondAttribute="leading" id="teo-rW-AFU"/>
+                                            <constraint firstAttribute="trailing" secondItem="hGm-N4-RSv" secondAttribute="trailing" id="xdf-nU-k5X"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jZF-nc-WAU" customClass="DialogCustomView" customModule="SJ01" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="46" width="280" height="40"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="タイトル" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5n8-b7-ecW">
+                                                <rect key="frame" x="100" y="10.5" width="80" height="20"/>
+                                                <fontDescription key="fontDescription" name="cinecaption" family="cinecaption" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.51766183040000002" green="0.90951450889999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="SJM-o5-jtZ"/>
+                                            <constraint firstItem="5n8-b7-ecW" firstAttribute="centerX" secondItem="jZF-nc-WAU" secondAttribute="centerX" id="XGz-wk-PUh"/>
+                                            <constraint firstItem="5n8-b7-ecW" firstAttribute="centerY" secondItem="jZF-nc-WAU" secondAttribute="centerY" id="hpn-ta-qg7"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.45098039215686275" green="0.3411764705882353" blue="0.23529411764705882" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="jZF-nc-WAU" firstAttribute="leading" secondItem="NGh-z5-oyE" secondAttribute="leading" constant="10" id="3Aa-bv-gkw"/>
+                                    <constraint firstAttribute="height" constant="275" id="41N-4t-Hzn"/>
+                                    <constraint firstItem="jZF-nc-WAU" firstAttribute="top" secondItem="NGh-z5-oyE" secondAttribute="top" constant="46" id="58K-08-JLF"/>
+                                    <constraint firstItem="p1J-ZX-6XO" firstAttribute="top" secondItem="NGh-z5-oyE" secondAttribute="top" id="9mE-2I-sle"/>
+                                    <constraint firstAttribute="trailing" secondItem="ac3-pq-gr2" secondAttribute="trailing" constant="10" id="UUu-aL-6kI"/>
+                                    <constraint firstAttribute="bottom" secondItem="ac3-pq-gr2" secondAttribute="bottom" constant="48" id="VYk-jT-Cxy"/>
+                                    <constraint firstAttribute="bottom" secondItem="p1J-ZX-6XO" secondAttribute="bottom" id="Vax-e0-XOi"/>
+                                    <constraint firstItem="p1J-ZX-6XO" firstAttribute="leading" secondItem="NGh-z5-oyE" secondAttribute="leading" id="XgD-6Y-4Ud"/>
+                                    <constraint firstAttribute="trailing" secondItem="p1J-ZX-6XO" secondAttribute="trailing" id="c2K-07-d2H"/>
+                                    <constraint firstItem="ac3-pq-gr2" firstAttribute="leading" secondItem="NGh-z5-oyE" secondAttribute="leading" constant="10" id="fiE-d1-9kc"/>
+                                    <constraint firstAttribute="width" constant="300" id="nU2-16-ZIv"/>
+                                    <constraint firstItem="ac3-pq-gr2" firstAttribute="top" secondItem="jZF-nc-WAU" secondAttribute="bottom" constant="3" id="sn1-Ni-oja"/>
+                                    <constraint firstAttribute="trailing" secondItem="jZF-nc-WAU" secondAttribute="trailing" constant="10" id="uuM-8u-1GV"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="NGh-z5-oyE" firstAttribute="centerX" secondItem="0MR-TD-TSd" secondAttribute="centerX" id="KDL-Hn-LNK"/>
+                            <constraint firstItem="NGh-z5-oyE" firstAttribute="centerY" secondItem="0MR-TD-TSd" secondAttribute="centerY" id="daR-b1-Xh4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8GF-4Z-dTB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ob5-qI-E3x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="112.8" y="158.77061469265368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="DialoImage" width="299" height="279"/>
+    </resources>
+</document>

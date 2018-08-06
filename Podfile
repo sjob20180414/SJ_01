@@ -7,6 +7,7 @@ target 'SJ01' do
 
 pod 'RealmSwift’, '~> 2.10.2’
 pod ‘ObjectMapper’
+pod 'SlideMenuControllerSwift'
 
   # Pods for SJ01
 

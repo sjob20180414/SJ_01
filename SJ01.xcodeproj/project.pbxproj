@@ -29,6 +29,15 @@
 		DCAC463B20DDFE220020727A /* SuperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAC463A20DDFE220020727A /* SuperViewController.swift */; };
 		DCD525FC2115237A0045C848 /* cinecaption227.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DCD525FB2115232B0045C848 /* cinecaption227.ttf */; };
 		DCD525FF211538210045C848 /* NoticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD525FE211538210045C848 /* NoticeViewController.swift */; };
+		DCD526012115504C0045C848 /* WeeklyReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD526002115504C0045C848 /* WeeklyReport.swift */; };
+		DCD52604211559950045C848 /* WeeklyReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD52603211559950045C848 /* WeeklyReportViewController.swift */; };
+		DCD5260621155DF60045C848 /* WeeklyReport.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCD5260521155DF60045C848 /* WeeklyReport.storyboard */; };
+		DCE84EB821166F3F00173ADC /* SlideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE84EB721166F3F00173ADC /* SlideMenuViewController.swift */; };
+		DCE84EBA2116706E00173ADC /* SlideMenuView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCE84EB92116706E00173ADC /* SlideMenuView.storyboard */; };
+		DCE84EBE2116872C00173ADC /* CustomPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE84EBD2116872C00173ADC /* CustomPresentationController.swift */; };
+		DCE84EC021168A5100173ADC /* CustomAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE84EBF21168A5100173ADC /* CustomAnimatedTransitioning.swift */; };
+		DCE84EC3211690A100173ADC /* DialogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE84EC2211690A100173ADC /* DialogViewController.swift */; };
+		DCE84EC5211690BA00173ADC /* DialogView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCE84EC4211690BA00173ADC /* DialogView.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +67,15 @@
 		DCAC463A20DDFE220020727A /* SuperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperViewController.swift; sourceTree = "<group>"; };
 		DCD525FB2115232B0045C848 /* cinecaption227.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = cinecaption227.ttf; sourceTree = "<group>"; };
 		DCD525FE211538210045C848 /* NoticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeViewController.swift; sourceTree = "<group>"; };
+		DCD526002115504C0045C848 /* WeeklyReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyReport.swift; sourceTree = "<group>"; };
+		DCD52603211559950045C848 /* WeeklyReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyReportViewController.swift; sourceTree = "<group>"; };
+		DCD5260521155DF60045C848 /* WeeklyReport.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WeeklyReport.storyboard; sourceTree = "<group>"; };
+		DCE84EB721166F3F00173ADC /* SlideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideMenuViewController.swift; sourceTree = "<group>"; };
+		DCE84EB92116706E00173ADC /* SlideMenuView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SlideMenuView.storyboard; sourceTree = "<group>"; };
+		DCE84EBD2116872C00173ADC /* CustomPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPresentationController.swift; sourceTree = "<group>"; };
+		DCE84EBF21168A5100173ADC /* CustomAnimatedTransitioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnimatedTransitioning.swift; sourceTree = "<group>"; };
+		DCE84EC2211690A100173ADC /* DialogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogViewController.swift; sourceTree = "<group>"; };
+		DCE84EC4211690BA00173ADC /* DialogView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DialogView.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,12 +145,12 @@
 		DC831A442081D9C000D76A56 /* SJ01 */ = {
 			isa = PBXGroup;
 			children = (
+				DC831A452081D9C000D76A56 /* AppDelegate.swift */,
 				DCA72E842082134200057BA3 /* View */,
 				DCA72E872082139600057BA3 /* Manager */,
 				DCA72E93208214A200057BA3 /* Model */,
 				DC59051620DE0D1E00C3ECBE /* Const */,
 				DCA72E8E2082141600057BA3 /* Utils */,
-				DC831A452081D9C000D76A56 /* AppDelegate.swift */,
 				DC831A472081D9C000D76A56 /* ViewController.swift */,
 				DC831A492081D9C000D76A56 /* Main.storyboard */,
 				DC831A4F2081D9C000D76A56 /* Assets.xcassets */,
@@ -159,7 +177,10 @@
 				DCAC463A20DDFE220020727A /* SuperViewController.swift */,
 				DCA72E812082130800057BA3 /* Login */,
 				1617B5ED20BA82D700DEE046 /* Home */,
+				DCD526022115596F0045C848 /* WeeklyReport */,
 				DCD525FD211537F80045C848 /* Notice */,
+				DCE84EB621166ED800173ADC /* SlideMenu */,
+				DCE84EC12116906900173ADC /* Dialog */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -189,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				DCA72E94208214D200057BA3 /* User.swift */,
+				DCD526002115504C0045C848 /* WeeklyReport.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -199,6 +221,35 @@
 				DCD525FE211538210045C848 /* NoticeViewController.swift */,
 			);
 			path = Notice;
+			sourceTree = "<group>";
+		};
+		DCD526022115596F0045C848 /* WeeklyReport */ = {
+			isa = PBXGroup;
+			children = (
+				DCD52603211559950045C848 /* WeeklyReportViewController.swift */,
+				DCD5260521155DF60045C848 /* WeeklyReport.storyboard */,
+			);
+			path = WeeklyReport;
+			sourceTree = "<group>";
+		};
+		DCE84EB621166ED800173ADC /* SlideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				DCE84EB721166F3F00173ADC /* SlideMenuViewController.swift */,
+				DCE84EB92116706E00173ADC /* SlideMenuView.storyboard */,
+			);
+			path = SlideMenu;
+			sourceTree = "<group>";
+		};
+		DCE84EC12116906900173ADC /* Dialog */ = {
+			isa = PBXGroup;
+			children = (
+				DCE84EBD2116872C00173ADC /* CustomPresentationController.swift */,
+				DCE84EBF21168A5100173ADC /* CustomAnimatedTransitioning.swift */,
+				DCE84EC2211690A100173ADC /* DialogViewController.swift */,
+				DCE84EC4211690BA00173ADC /* DialogView.storyboard */,
+			);
+			path = Dialog;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,7 +264,6 @@
 				DC831A3F2081D9BF00D76A56 /* Frameworks */,
 				DC831A402081D9BF00D76A56 /* Resources */,
 				7B85F9E12B89650D5FCB5860 /* [CP] Embed Pods Frameworks */,
-				1F2822328D8C49A0DD3BD715 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -263,11 +313,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCE84EBA2116706E00173ADC /* SlideMenuView.storyboard in Resources */,
 				DCD525FC2115237A0045C848 /* cinecaption227.ttf in Resources */,
 				1617B5F120BA833500DEE046 /* HomeView.storyboard in Resources */,
 				DC831A532081D9C000D76A56 /* LaunchScreen.storyboard in Resources */,
+				DCD5260621155DF60045C848 /* WeeklyReport.storyboard in Resources */,
 				DC831A502081D9C000D76A56 /* Assets.xcassets in Resources */,
 				DC831A4B2081D9C000D76A56 /* Main.storyboard in Resources */,
+				DCE84EC5211690BA00173ADC /* DialogView.storyboard in Resources */,
 				DC62E18A208219F1004D57A5 /* LoginView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,21 +328,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1F2822328D8C49A0DD3BD715 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SJ01/Pods-SJ01-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		7B85F9E12B89650D5FCB5860 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -300,12 +338,14 @@
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SlideMenuControllerSwift/SlideMenuControllerSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SlideMenuControllerSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -344,14 +384,20 @@
 				DCD525FF211538210045C848 /* NoticeViewController.swift in Sources */,
 				DCA72E922082143000057BA3 /* ApiUtils.swift in Sources */,
 				DCA72E8C208213AF00057BA3 /* DataManager.swift in Sources */,
+				DCD52604211559950045C848 /* WeeklyReportViewController.swift in Sources */,
 				DC8E928E20DE198900F51E40 /* CustomNavigationBar.swift in Sources */,
+				DCE84EC021168A5100173ADC /* CustomAnimatedTransitioning.swift in Sources */,
 				DCA72E832082133900057BA3 /* LoginViewController.swift in Sources */,
 				DC831A482081D9C000D76A56 /* ViewController.swift in Sources */,
+				DCD526012115504C0045C848 /* WeeklyReport.swift in Sources */,
+				DCE84EBE2116872C00173ADC /* CustomPresentationController.swift in Sources */,
 				1617B5EF20BA830700DEE046 /* HomeViewController.swift in Sources */,
+				DCE84EB821166F3F00173ADC /* SlideMenuViewController.swift in Sources */,
 				DC831A4E2081D9C000D76A56 /* SJ01.xcdatamodeld in Sources */,
 				DCA72E95208214D200057BA3 /* User.swift in Sources */,
 				DCAC463B20DDFE220020727A /* SuperViewController.swift in Sources */,
 				DC831A462081D9C000D76A56 /* AppDelegate.swift in Sources */,
+				DCE84EC3211690A100173ADC /* DialogViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

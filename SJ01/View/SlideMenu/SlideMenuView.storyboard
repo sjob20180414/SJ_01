@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="cinecaption227.ttf">
+            <string>cinecaption</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Slide Menu View Controller-->
+        <scene sceneID="3jk-H0-p3a">
+            <objects>
+                <viewController storyboardIdentifier="SlideMenuView" id="7NZ-8D-l1V" customClass="SlideMenuViewController" customModule="SJ01" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sJO-wS-1E9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a7d-th-Map" customClass="SlideMenuListCustomButton" customModule="SJ01" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="125" width="375" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Ve2-p9-ahi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="cinecaption" family="cinecaption" pointSize="27"/>
+                                <state key="normal" title="ユーザー情報設定">
+                                    <color key="titleColor" red="0.98039215690000003" green="0.58823529409999997" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BFU-hY-pyP" customClass="SlideMenuListCustomButton" customModule="SJ01" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="210" width="375" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="3Kq-NT-Shy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="cinecaption" family="cinecaption" pointSize="27"/>
+                                <state key="normal" title="データ同期">
+                                    <color key="titleColor" red="0.98039215690000003" green="0.58823529409999997" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IeF-vh-klN" customClass="SlideMenuListCustomButton" customModule="SJ01" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="295" width="375" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="C1D-7Y-Pqf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="cinecaption" family="cinecaption" pointSize="27"/>
+                                <state key="normal" title="アプリの使い方">
+                                    <color key="titleColor" red="0.98039215690000003" green="0.58823529409999997" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mWh-GP-LKI" customClass="SlideMenuListCustomButton" customModule="SJ01" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="380" width="375" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="aR6-xi-a63"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="cinecaption" family="cinecaption" pointSize="27"/>
+                                <state key="normal" title="よくある質問">
+                                    <color key="titleColor" red="0.98039215690000003" green="0.58823529409999997" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i85-Mu-Rgt" customClass="SlideMenuCustomFooterView" customModule="SJ01" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="465" width="375" height="353"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tTP-Se-rAK" customClass="SlideMenuCustomLogoutButton" customModule="SJ01" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="5" width="369" height="80"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="xQ6-Yb-4Mw"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="cinecaption" family="cinecaption" pointSize="27"/>
+                                        <state key="normal" title="ログアウト">
+                                            <color key="titleColor" white="0.32676866319444442" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="50"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="logoutButtonTap:" destination="7NZ-8D-l1V" eventType="touchUpInside" id="E1m-Tm-jap"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s52-cS-vFJ">
+                                        <rect key="frame" x="0.0" y="95" width="150" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="p28-FD-ql2"/>
+                                            <constraint firstAttribute="height" constant="20" id="ylE-dv-x3y"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="cinecaption" family="cinecaption" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.98039215690000003" green="0.58823529409999997" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="tTP-Se-rAK" secondAttribute="trailing" constant="6" id="0hO-7m-Gk2"/>
+                                    <constraint firstItem="tTP-Se-rAK" firstAttribute="top" secondItem="i85-Mu-Rgt" secondAttribute="top" constant="5" id="BZu-Ay-9rn"/>
+                                    <constraint firstItem="s52-cS-vFJ" firstAttribute="leading" secondItem="i85-Mu-Rgt" secondAttribute="leading" id="D9H-Zb-Jq9"/>
+                                    <constraint firstItem="s52-cS-vFJ" firstAttribute="top" secondItem="tTP-Se-rAK" secondAttribute="bottom" constant="10" id="cAU-En-Ax2"/>
+                                    <constraint firstItem="tTP-Se-rAK" firstAttribute="leading" secondItem="i85-Mu-Rgt" secondAttribute="leading" id="qzT-Je-e8z"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="78K-aE-qiH" customClass="SlideMenuCustomView" customModule="SJ01" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="設定メニュー" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5is-uX-k3j">
+                                        <rect key="frame" x="82.666666666666686" y="55" width="210" height="35"/>
+                                        <fontDescription key="fontDescription" name="cinecaption" family="cinecaption" pointSize="35"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.98039215690000003" green="0.58823529409999997" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="5is-uX-k3j" secondAttribute="bottom" constant="30" id="WIl-Za-RQ5"/>
+                                    <constraint firstAttribute="height" constant="120" id="gOd-EF-FDd"/>
+                                    <constraint firstItem="5is-uX-k3j" firstAttribute="centerX" secondItem="78K-aE-qiH" secondAttribute="centerX" id="tu0-N3-6ez"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="33"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="mWh-GP-LKI" firstAttribute="leading" secondItem="Zc3-Rh-5gH" secondAttribute="leading" id="1lq-ww-a8R"/>
+                            <constraint firstItem="Zc3-Rh-5gH" firstAttribute="trailing" secondItem="a7d-th-Map" secondAttribute="trailing" id="3Wd-dj-xgJ"/>
+                            <constraint firstItem="a7d-th-Map" firstAttribute="leading" secondItem="Zc3-Rh-5gH" secondAttribute="leading" id="Akg-dO-wJ0"/>
+                            <constraint firstItem="i85-Mu-Rgt" firstAttribute="leading" secondItem="Zc3-Rh-5gH" secondAttribute="leading" id="EqH-gf-StT"/>
+                            <constraint firstItem="Zc3-Rh-5gH" firstAttribute="trailing" secondItem="BFU-hY-pyP" secondAttribute="trailing" id="Leu-Ry-Rzp"/>
+                            <constraint firstItem="Zc3-Rh-5gH" firstAttribute="trailing" secondItem="i85-Mu-Rgt" secondAttribute="trailing" id="OWG-8H-CkO"/>
+                            <constraint firstItem="a7d-th-Map" firstAttribute="top" secondItem="78K-aE-qiH" secondAttribute="bottom" constant="5" id="OrK-Ek-G8Z"/>
+                            <constraint firstItem="Zc3-Rh-5gH" firstAttribute="trailing" secondItem="IeF-vh-klN" secondAttribute="trailing" id="Shp-nN-0oI"/>
+                            <constraint firstItem="78K-aE-qiH" firstAttribute="leading" secondItem="Zc3-Rh-5gH" secondAttribute="leading" id="Vac-Um-ABv"/>
+                            <constraint firstItem="i85-Mu-Rgt" firstAttribute="bottom" secondItem="Zc3-Rh-5gH" secondAttribute="bottom" constant="40" id="YLt-Bv-Rlc"/>
+                            <constraint firstItem="IeF-vh-klN" firstAttribute="top" secondItem="BFU-hY-pyP" secondAttribute="bottom" constant="5" id="dth-Kd-5jS"/>
+                            <constraint firstItem="BFU-hY-pyP" firstAttribute="top" secondItem="a7d-th-Map" secondAttribute="bottom" constant="5" id="ght-uC-UTe"/>
+                            <constraint firstItem="78K-aE-qiH" firstAttribute="top" secondItem="Zc3-Rh-5gH" secondAttribute="top" constant="-44" id="k6y-nO-zUf"/>
+                            <constraint firstItem="Zc3-Rh-5gH" firstAttribute="trailing" secondItem="mWh-GP-LKI" secondAttribute="trailing" id="oeF-fu-Gyf"/>
+                            <constraint firstItem="Zc3-Rh-5gH" firstAttribute="trailing" secondItem="78K-aE-qiH" secondAttribute="trailing" id="rSz-EE-lhg"/>
+                            <constraint firstItem="BFU-hY-pyP" firstAttribute="leading" secondItem="Zc3-Rh-5gH" secondAttribute="leading" id="sMW-DL-cu7"/>
+                            <constraint firstItem="IeF-vh-klN" firstAttribute="leading" secondItem="Zc3-Rh-5gH" secondAttribute="leading" id="ss0-mZ-EhS"/>
+                            <constraint firstItem="i85-Mu-Rgt" firstAttribute="top" secondItem="mWh-GP-LKI" secondAttribute="bottom" constant="5" id="w3C-iC-TDe"/>
+                            <constraint firstItem="mWh-GP-LKI" firstAttribute="top" secondItem="IeF-vh-klN" secondAttribute="bottom" constant="5" id="yAK-7a-RjT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Zc3-Rh-5gH"/>
+                    </view>
+                    <connections>
+                        <outlet property="verLabel" destination="s52-cS-vFJ" id="kWn-Yq-nsZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fVE-qu-LFL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="41" y="159"/>
+        </scene>
+    </scenes>
+</document>
