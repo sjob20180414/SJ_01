@@ -13,8 +13,18 @@ let BASE_URL = "http://127.0.0.1"
 //let BASE_URL = "https://www.interests-amusement.xyz"
 
 let POST = "POST"
+let GET = "GET"
 let DATA = "data"
 let WEB = "/web"
 let APP = "/app"
 
 let TEST = "/test"
+
+
+let GOOGLE_API_SCOPES = [
+    "https://mail.google.com/",
+    "https://www.googleapis.com/auth/gmail.modify",
+    "https://www.googleapis.com/auth/gmail.readonly",
+    "https://www.googleapis.com/auth/gmail.metadata",
+    "https://www.googleapis.com/auth/gmail.labels"
+]

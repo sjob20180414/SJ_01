@@ -24,7 +24,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Fz-fu-CqA" customClass="CustomView" customModule="SJ01" customModuleProvider="target">
-                                <rect key="frame" x="37" y="259" width="300" height="312"/>
+                                <rect key="frame" x="37" y="259" width="300" height="309"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ruH-Vm-Ur5">
                                         <rect key="frame" x="20" y="20" width="260" height="35"/>
@@ -66,14 +66,14 @@
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQo-lu-yfX">
-                                        <rect key="frame" x="22.666666666666657" y="190" width="254.99999999999997" height="32"/>
+                                        <rect key="frame" x="22.666666666666657" y="190" width="254.99999999999997" height="29"/>
                                         <fontDescription key="fontDescription" name="cinecaption" family="cinecaption" pointSize="17"/>
                                         <state key="normal" title="パスワードをお忘れの方はこちら">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZGu-8j-oui" customClass="CustomButton" customModule="SJ01" customModuleProvider="target">
-                                        <rect key="frame" x="75" y="242" width="150" height="50"/>
+                                        <rect key="frame" x="75" y="239" width="150" height="50"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="Irt-99-Pn7"/>
@@ -132,13 +132,13 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="報告" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JYn-MM-0o2">
-                                        <rect key="frame" x="110" y="0.0" width="165" height="93.333333333333329"/>
+                                        <rect key="frame" x="110" y="0.0" width="165" height="80"/>
                                         <fontDescription key="fontDescription" name="cinecaption" family="cinecaption" pointSize="80"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="アプリ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cYm-Kr-HxK">
-                                        <rect key="frame" x="110" y="93.333333333333343" width="165" height="60.666666666666657"/>
+                                        <rect key="frame" x="110" y="80" width="165" height="52"/>
                                         <fontDescription key="fontDescription" name="cinecaption" family="cinecaption" pointSize="52"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -160,18 +160,135 @@
                                     <constraint firstItem="qmI-sp-WD2" firstAttribute="leading" secondItem="dfu-Ta-PZK" secondAttribute="leading" id="o0E-u0-k9x"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LVo-bO-NCU">
+                                <rect key="frame" x="95" y="588" width="184" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="G" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLE-Jh-xCi">
+                                        <rect key="frame" x="0.0" y="0.0" width="14" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="14" id="EHf-i6-wJe"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="cinecaption" family="cinecaption" pointSize="25"/>
+                                        <color key="textColor" red="0.32156862745098036" green="0.52549019607843139" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="o" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rJm-qs-2LW">
+                                        <rect key="frame" x="14" y="0.0" width="14" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="14" id="nM3-u6-SCa"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="cinecaption" family="cinecaption" pointSize="25"/>
+                                        <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="o" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ous-Tg-MTb">
+                                        <rect key="frame" x="28" y="0.0" width="14" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="14" id="i0J-vj-UF9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="cinecaption" family="cinecaption" pointSize="25"/>
+                                        <color key="textColor" red="0.94901960784313721" green="0.74117647058823533" blue="0.25882352941176467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="g" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cew-Na-Epm">
+                                        <rect key="frame" x="42" y="0.0" width="14" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="14" id="eML-8A-AXU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="cinecaption" family="cinecaption" pointSize="25"/>
+                                        <color key="textColor" red="0.32156862749999998" green="0.52549019610000003" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="l" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zBH-6v-IZU">
+                                        <rect key="frame" x="56" y="0.0" width="14" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="14" id="hJB-Eh-e2q"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="cinecaption" family="cinecaption" pointSize="25"/>
+                                        <color key="textColor" red="0.34509803921568627" green="0.6470588235294118" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="e" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xwy-hQ-3Go">
+                                        <rect key="frame" x="70" y="0.0" width="14" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="14" id="VND-MI-5ym"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="cinecaption" family="cinecaption" pointSize="25"/>
+                                        <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Sing In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KDj-me-KVN">
+                                        <rect key="frame" x="84" y="0.0" width="100" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="6fw-3k-un5"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="cinecaption" family="cinecaption" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d8d-MV-yC4">
+                                        <rect key="frame" x="0.0" y="0.0" width="184" height="30"/>
+                                        <connections>
+                                            <action selector="googleSingInTap:" destination="dHY-80-gWm" eventType="touchUpInside" id="BNF-MS-eEe"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="d8d-MV-yC4" firstAttribute="leading" secondItem="LVo-bO-NCU" secondAttribute="leading" id="0zt-Lk-4oR"/>
+                                    <constraint firstItem="KDj-me-KVN" firstAttribute="leading" secondItem="xwy-hQ-3Go" secondAttribute="trailing" id="1Q4-ic-oin"/>
+                                    <constraint firstItem="Ous-Tg-MTb" firstAttribute="top" secondItem="LVo-bO-NCU" secondAttribute="top" id="41l-Uy-dGs"/>
+                                    <constraint firstItem="KDj-me-KVN" firstAttribute="top" secondItem="LVo-bO-NCU" secondAttribute="top" id="8EB-Ii-hPc"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ous-Tg-MTb" secondAttribute="bottom" id="8cX-Rh-nl1"/>
+                                    <constraint firstItem="d8d-MV-yC4" firstAttribute="top" secondItem="LVo-bO-NCU" secondAttribute="top" id="BCx-zg-Ilk"/>
+                                    <constraint firstItem="cLE-Jh-xCi" firstAttribute="top" secondItem="LVo-bO-NCU" secondAttribute="top" id="C7J-vj-tlA"/>
+                                    <constraint firstItem="xwy-hQ-3Go" firstAttribute="leading" secondItem="zBH-6v-IZU" secondAttribute="trailing" id="HUj-p0-WyV"/>
+                                    <constraint firstAttribute="bottom" secondItem="rJm-qs-2LW" secondAttribute="bottom" id="Jy1-Mz-L30"/>
+                                    <constraint firstAttribute="height" constant="30" id="LwB-ar-k1A"/>
+                                    <constraint firstAttribute="bottom" secondItem="d8d-MV-yC4" secondAttribute="bottom" id="QPC-TN-QkF"/>
+                                    <constraint firstAttribute="bottom" secondItem="zBH-6v-IZU" secondAttribute="bottom" id="VPQ-On-mKD"/>
+                                    <constraint firstAttribute="trailing" secondItem="d8d-MV-yC4" secondAttribute="trailing" id="XBH-po-LFo"/>
+                                    <constraint firstItem="Ous-Tg-MTb" firstAttribute="leading" secondItem="rJm-qs-2LW" secondAttribute="trailing" id="b1m-CK-wUl"/>
+                                    <constraint firstItem="cew-Na-Epm" firstAttribute="top" secondItem="LVo-bO-NCU" secondAttribute="top" id="cQX-l0-2yz"/>
+                                    <constraint firstItem="zBH-6v-IZU" firstAttribute="top" secondItem="LVo-bO-NCU" secondAttribute="top" id="dSq-4H-Mga"/>
+                                    <constraint firstAttribute="bottom" secondItem="KDj-me-KVN" secondAttribute="bottom" id="dhd-hg-XDl"/>
+                                    <constraint firstAttribute="bottom" secondItem="cLE-Jh-xCi" secondAttribute="bottom" id="ksU-yV-RGb"/>
+                                    <constraint firstAttribute="width" constant="184" id="nYX-qB-JrA"/>
+                                    <constraint firstItem="xwy-hQ-3Go" firstAttribute="top" secondItem="LVo-bO-NCU" secondAttribute="top" id="qdG-uV-rHE"/>
+                                    <constraint firstAttribute="bottom" secondItem="xwy-hQ-3Go" secondAttribute="bottom" id="r8H-ne-zRT"/>
+                                    <constraint firstItem="rJm-qs-2LW" firstAttribute="leading" secondItem="cLE-Jh-xCi" secondAttribute="trailing" id="rB9-VU-rsa"/>
+                                    <constraint firstAttribute="bottom" secondItem="cew-Na-Epm" secondAttribute="bottom" id="rRm-u7-iGn"/>
+                                    <constraint firstItem="zBH-6v-IZU" firstAttribute="leading" secondItem="cew-Na-Epm" secondAttribute="trailing" id="rVl-oe-Dvd"/>
+                                    <constraint firstItem="cew-Na-Epm" firstAttribute="leading" secondItem="Ous-Tg-MTb" secondAttribute="trailing" id="sfo-Z9-lu7"/>
+                                    <constraint firstItem="cLE-Jh-xCi" firstAttribute="leading" secondItem="LVo-bO-NCU" secondAttribute="leading" id="suk-qv-snl"/>
+                                    <constraint firstItem="rJm-qs-2LW" firstAttribute="top" secondItem="LVo-bO-NCU" secondAttribute="top" id="v7i-OP-cbA"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IhA-lv-75P">
+                                <rect key="frame" x="164" y="639" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="test:" destination="dHY-80-gWm" eventType="touchUpInside" id="Ch6-81-99q"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="dfu-Ta-PZK" firstAttribute="leading" secondItem="ooV-Sn-MqA" secondAttribute="leading" constant="50" id="7J7-9z-GjD"/>
                             <constraint firstItem="dfu-Ta-PZK" firstAttribute="top" secondItem="ooV-Sn-MqA" secondAttribute="top" constant="50" id="9Qg-dN-aoM"/>
                             <constraint firstItem="9Fz-fu-CqA" firstAttribute="top" secondItem="dfu-Ta-PZK" secondAttribute="bottom" constant="25" id="Egm-7Z-igp"/>
+                            <constraint firstItem="LVo-bO-NCU" firstAttribute="centerX" secondItem="Fd9-bv-zHy" secondAttribute="centerX" id="GNR-Bd-kzA"/>
                             <constraint firstItem="ooV-Sn-MqA" firstAttribute="trailing" secondItem="dfu-Ta-PZK" secondAttribute="trailing" constant="50" id="I2x-BU-BtB"/>
+                            <constraint firstItem="LVo-bO-NCU" firstAttribute="top" secondItem="9Fz-fu-CqA" secondAttribute="bottom" constant="20" id="Oc5-uS-ebg"/>
+                            <constraint firstItem="IhA-lv-75P" firstAttribute="top" secondItem="LVo-bO-NCU" secondAttribute="bottom" constant="21" id="Xf4-eb-YTg"/>
                             <constraint firstItem="9Fz-fu-CqA" firstAttribute="centerX" secondItem="ooV-Sn-MqA" secondAttribute="centerX" id="YdW-Z7-BUi"/>
+                            <constraint firstItem="ooV-Sn-MqA" firstAttribute="trailing" secondItem="IhA-lv-75P" secondAttribute="trailing" constant="165" id="esm-w7-BXJ"/>
+                            <constraint firstItem="IhA-lv-75P" firstAttribute="leading" secondItem="ooV-Sn-MqA" secondAttribute="leading" constant="164" id="tMa-rh-9Le"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ooV-Sn-MqA"/>
                     </view>
                     <connections>
+                        <outlet property="googleSingInButton" destination="d8d-MV-yC4" id="b9G-8S-9SN"/>
                         <outlet property="idTextField" destination="ruH-Vm-Ur5" id="ddF-zk-spV"/>
                         <outlet property="passwordTextField" destination="oGc-Wu-Rd9" id="TeA-ai-ueB"/>
                     </connections>

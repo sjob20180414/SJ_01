@@ -22,6 +22,17 @@ class DataManager {
         })
     }
     
+    func fetchGmailList(accessToken: String, completion: ((Bool) -> Void)?) {
+        RemoteDataManager.getGmailApi(accessToken: accessToken, completion: {(success, data) in
+            if success {
+                let jsonUserData = data
+                completion!(true)
+            } else {
+                completion!(false)
+            }
+        })
+    }
+    
     func createAccessData() -> [String: Any] {
         let data = [
             "key": [

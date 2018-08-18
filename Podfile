@@ -8,6 +8,7 @@ target 'SJ01' do
 pod 'RealmSwift’, '~> 2.10.2’
 pod ‘ObjectMapper’
 pod 'SlideMenuControllerSwift'
+pod 'GoogleSignIn'
 
   # Pods for SJ01
 

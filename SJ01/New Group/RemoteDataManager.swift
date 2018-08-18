@@ -44,5 +44,35 @@ class RemoteDataManager {
         })
         task.resume()
     }
+    
+    static func getGmailApi(accessToken: String, completion: ((Bool, Any?) -> Void)?) {
+        let user = LocalDataManager<User>().fetchFirst()
+        let userId = user?.googleEmail
+        var request = URLRequest(url: URL(string: "https://www.googleapis.com/gmail/v1/users/" + userId! + "/labels")!)//messages")!)
+        let config = URLSessionConfiguration.default
+        let session = URLSession(configuration: config)
+        request.addValue("Basic \(accessToken)", forHTTPHeaderField: "Authorization")
+        
+        let task = session.dataTask(with: request, completionHandler: {
+            (data, response, error) in
+            
+            if let data = data, let response = response {
+                print(response)
+                print(NSString(data: data, encoding: String.Encoding.utf8.rawValue) as Any)
+                do {
+                    let json = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.allowFragments) as! NSDictionary
+                    let data = json[DATA] as Any
+                    completion!(true, data)
+                } catch {
+                    // jsonパースエラー
+                    completion!(false, nil)
+                }
+            } else {
+                // null(nil)エラー
+                completion!(false, nil)
+            }
+        })
+        task.resume()
+    }
 }
 

@@ -7,3 +7,22 @@
 //
 
 import Foundation
+import RealmSwift
+
+class LocalDataManager <T : RealmSwift.Object> {
+    let realm: Realm
+    
+    init () {
+        try! realm = Realm()
+    }
+    
+    func fetchAll () -> Results<T> {
+        return realm.objects(T.self)
+    }
+    
+    func fetchFirst () -> T? {
+        return fetchAll().first
+    }
+}
+
+

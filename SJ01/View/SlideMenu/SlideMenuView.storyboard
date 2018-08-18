@@ -24,7 +24,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a7d-th-Map" customClass="SlideMenuListCustomButton" customModule="SJ01" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="125" width="375" height="80"/>
+                                <rect key="frame" x="0.0" y="125" width="360" height="80"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="Ve2-p9-ahi"/>
@@ -35,12 +35,12 @@
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <integer key="value" value="50"/>
+                                        <real key="value" value="30"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BFU-hY-pyP" customClass="SlideMenuListCustomButton" customModule="SJ01" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="210" width="375" height="80"/>
+                                <rect key="frame" x="0.0" y="210" width="360" height="80"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="3Kq-NT-Shy"/>
@@ -51,12 +51,12 @@
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <integer key="value" value="50"/>
+                                        <real key="value" value="30"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IeF-vh-klN" customClass="SlideMenuListCustomButton" customModule="SJ01" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="295" width="375" height="80"/>
+                                <rect key="frame" x="0.0" y="295" width="360" height="80"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="C1D-7Y-Pqf"/>
@@ -67,12 +67,12 @@
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <integer key="value" value="50"/>
+                                        <real key="value" value="30"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mWh-GP-LKI" customClass="SlideMenuListCustomButton" customModule="SJ01" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="380" width="375" height="80"/>
+                                <rect key="frame" x="0.0" y="380" width="360" height="80"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="aR6-xi-a63"/>
@@ -83,7 +83,7 @@
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <integer key="value" value="50"/>
+                                        <real key="value" value="30"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
@@ -91,7 +91,7 @@
                                 <rect key="frame" x="0.0" y="465" width="375" height="353"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tTP-Se-rAK" customClass="SlideMenuCustomLogoutButton" customModule="SJ01" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="5" width="369" height="80"/>
+                                        <rect key="frame" x="0.0" y="10" width="365" height="80"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="xQ6-Yb-4Mw"/>
@@ -102,7 +102,7 @@
                                         </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <integer key="value" value="50"/>
+                                                <real key="value" value="40"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
@@ -110,7 +110,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s52-cS-vFJ">
-                                        <rect key="frame" x="0.0" y="95" width="150" height="20"/>
+                                        <rect key="frame" x="0.0" y="100" width="150" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="150" id="p28-FD-ql2"/>
                                             <constraint firstAttribute="height" constant="20" id="ylE-dv-x3y"/>
@@ -122,15 +122,15 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.98039215690000003" green="0.58823529409999997" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="tTP-Se-rAK" secondAttribute="trailing" constant="6" id="0hO-7m-Gk2"/>
-                                    <constraint firstItem="tTP-Se-rAK" firstAttribute="top" secondItem="i85-Mu-Rgt" secondAttribute="top" constant="5" id="BZu-Ay-9rn"/>
+                                    <constraint firstAttribute="trailing" secondItem="tTP-Se-rAK" secondAttribute="trailing" constant="10" id="0hO-7m-Gk2"/>
+                                    <constraint firstItem="tTP-Se-rAK" firstAttribute="top" secondItem="i85-Mu-Rgt" secondAttribute="top" constant="10" id="BZu-Ay-9rn"/>
                                     <constraint firstItem="s52-cS-vFJ" firstAttribute="leading" secondItem="i85-Mu-Rgt" secondAttribute="leading" id="D9H-Zb-Jq9"/>
                                     <constraint firstItem="s52-cS-vFJ" firstAttribute="top" secondItem="tTP-Se-rAK" secondAttribute="bottom" constant="10" id="cAU-En-Ax2"/>
                                     <constraint firstItem="tTP-Se-rAK" firstAttribute="leading" secondItem="i85-Mu-Rgt" secondAttribute="leading" id="qzT-Je-e8z"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <integer key="value" value="50"/>
+                                        <real key="value" value="46"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -138,7 +138,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="設定メニュー" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5is-uX-k3j">
-                                        <rect key="frame" x="82.666666666666686" y="55" width="210" height="35"/>
+                                        <rect key="frame" x="83" y="55" width="210" height="35"/>
                                         <fontDescription key="fontDescription" name="cinecaption" family="cinecaption" pointSize="35"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -159,19 +159,19 @@
                         </subviews>
                         <constraints>
                             <constraint firstItem="mWh-GP-LKI" firstAttribute="leading" secondItem="Zc3-Rh-5gH" secondAttribute="leading" id="1lq-ww-a8R"/>
-                            <constraint firstItem="Zc3-Rh-5gH" firstAttribute="trailing" secondItem="a7d-th-Map" secondAttribute="trailing" id="3Wd-dj-xgJ"/>
+                            <constraint firstItem="mWh-GP-LKI" firstAttribute="trailing" secondItem="Zc3-Rh-5gH" secondAttribute="trailing" constant="-15" id="3jJ-Ro-HeI"/>
+                            <constraint firstItem="BFU-hY-pyP" firstAttribute="trailing" secondItem="Zc3-Rh-5gH" secondAttribute="trailing" constant="-15" id="8fL-fS-dvG"/>
                             <constraint firstItem="a7d-th-Map" firstAttribute="leading" secondItem="Zc3-Rh-5gH" secondAttribute="leading" id="Akg-dO-wJ0"/>
                             <constraint firstItem="i85-Mu-Rgt" firstAttribute="leading" secondItem="Zc3-Rh-5gH" secondAttribute="leading" id="EqH-gf-StT"/>
-                            <constraint firstItem="Zc3-Rh-5gH" firstAttribute="trailing" secondItem="BFU-hY-pyP" secondAttribute="trailing" id="Leu-Ry-Rzp"/>
+                            <constraint firstItem="IeF-vh-klN" firstAttribute="trailing" secondItem="Zc3-Rh-5gH" secondAttribute="trailing" constant="-15" id="Lxn-c3-jYD"/>
                             <constraint firstItem="Zc3-Rh-5gH" firstAttribute="trailing" secondItem="i85-Mu-Rgt" secondAttribute="trailing" id="OWG-8H-CkO"/>
                             <constraint firstItem="a7d-th-Map" firstAttribute="top" secondItem="78K-aE-qiH" secondAttribute="bottom" constant="5" id="OrK-Ek-G8Z"/>
-                            <constraint firstItem="Zc3-Rh-5gH" firstAttribute="trailing" secondItem="IeF-vh-klN" secondAttribute="trailing" id="Shp-nN-0oI"/>
+                            <constraint firstItem="a7d-th-Map" firstAttribute="trailing" secondItem="Zc3-Rh-5gH" secondAttribute="trailing" constant="-15" id="Sbj-A6-wDQ"/>
                             <constraint firstItem="78K-aE-qiH" firstAttribute="leading" secondItem="Zc3-Rh-5gH" secondAttribute="leading" id="Vac-Um-ABv"/>
                             <constraint firstItem="i85-Mu-Rgt" firstAttribute="bottom" secondItem="Zc3-Rh-5gH" secondAttribute="bottom" constant="40" id="YLt-Bv-Rlc"/>
                             <constraint firstItem="IeF-vh-klN" firstAttribute="top" secondItem="BFU-hY-pyP" secondAttribute="bottom" constant="5" id="dth-Kd-5jS"/>
                             <constraint firstItem="BFU-hY-pyP" firstAttribute="top" secondItem="a7d-th-Map" secondAttribute="bottom" constant="5" id="ght-uC-UTe"/>
                             <constraint firstItem="78K-aE-qiH" firstAttribute="top" secondItem="Zc3-Rh-5gH" secondAttribute="top" constant="-44" id="k6y-nO-zUf"/>
-                            <constraint firstItem="Zc3-Rh-5gH" firstAttribute="trailing" secondItem="mWh-GP-LKI" secondAttribute="trailing" id="oeF-fu-Gyf"/>
                             <constraint firstItem="Zc3-Rh-5gH" firstAttribute="trailing" secondItem="78K-aE-qiH" secondAttribute="trailing" id="rSz-EE-lhg"/>
                             <constraint firstItem="BFU-hY-pyP" firstAttribute="leading" secondItem="Zc3-Rh-5gH" secondAttribute="leading" id="sMW-DL-cu7"/>
                             <constraint firstItem="IeF-vh-klN" firstAttribute="leading" secondItem="Zc3-Rh-5gH" secondAttribute="leading" id="ss0-mZ-EhS"/>

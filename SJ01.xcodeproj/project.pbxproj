@@ -19,6 +19,7 @@
 		DC831A502081D9C000D76A56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC831A4F2081D9C000D76A56 /* Assets.xcassets */; };
 		DC831A532081D9C000D76A56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC831A512081D9C000D76A56 /* LaunchScreen.storyboard */; };
 		DC8E928E20DE198900F51E40 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8E928D20DE198900F51E40 /* CustomNavigationBar.swift */; };
+		DC944500211E600B00189A3E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC9444FF211E600B00189A3E /* GoogleService-Info.plist */; };
 		DCA72E832082133900057BA3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA72E822082133900057BA3 /* LoginViewController.swift */; };
 		DCA72E8B208213AF00057BA3 /* RemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA72E88208213AE00057BA3 /* RemoteDataManager.swift */; };
 		DCA72E8C208213AF00057BA3 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA72E89208213AE00057BA3 /* DataManager.swift */; };
@@ -57,6 +58,7 @@
 		DC831A522081D9C000D76A56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC831A542081D9C000D76A56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC8E928D20DE198900F51E40 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
+		DC9444FF211E600B00189A3E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		DCA72E822082133900057BA3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DCA72E88208213AE00057BA3 /* RemoteDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteDataManager.swift; sourceTree = "<group>"; };
 		DCA72E89208213AE00057BA3 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 		DC831A442081D9C000D76A56 /* SJ01 */ = {
 			isa = PBXGroup;
 			children = (
+				DC9444FF211E600B00189A3E /* GoogleService-Info.plist */,
 				DC831A452081D9C000D76A56 /* AppDelegate.swift */,
 				DCA72E842082134200057BA3 /* View */,
 				DCA72E872082139600057BA3 /* Manager */,
@@ -264,6 +267,7 @@
 				DC831A3F2081D9BF00D76A56 /* Frameworks */,
 				DC831A402081D9BF00D76A56 /* Resources */,
 				7B85F9E12B89650D5FCB5860 /* [CP] Embed Pods Frameworks */,
+				5E50DDB01DDA5CDF2B1E8BF9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -320,6 +324,7 @@
 				DCD5260621155DF60045C848 /* WeeklyReport.storyboard in Resources */,
 				DC831A502081D9C000D76A56 /* Assets.xcassets in Resources */,
 				DC831A4B2081D9C000D76A56 /* Main.storyboard in Resources */,
+				DC944500211E600B00189A3E /* GoogleService-Info.plist in Resources */,
 				DCE84EC5211690BA00173ADC /* DialogView.storyboard in Resources */,
 				DC62E18A208219F1004D57A5 /* LoginView.storyboard in Resources */,
 			);
@@ -328,6 +333,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		5E50DDB01DDA5CDF2B1E8BF9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SJ01/Pods-SJ01-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SJ01/Pods-SJ01-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		7B85F9E12B89650D5FCB5860 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -335,6 +358,9 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SJ01/Pods-SJ01-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
@@ -342,6 +368,9 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
@@ -539,7 +568,7 @@
 				DEVELOPMENT_TEAM = FCT52WRK2T;
 				INFOPLIST_FILE = SJ01/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = SJ01.SJ01;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SJ01.project;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -555,7 +584,7 @@
 				DEVELOPMENT_TEAM = FCT52WRK2T;
 				INFOPLIST_FILE = SJ01/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = SJ01.SJ01;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SJ01.project;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

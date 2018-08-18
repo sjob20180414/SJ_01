@@ -18,6 +18,8 @@ class SlideMenuViewController: UIViewController {
         verLabel.text = "Version " + ver!
     }
     
+    
+    
     @IBAction func logoutButtonTap(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
