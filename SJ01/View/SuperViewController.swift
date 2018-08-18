@@ -19,6 +19,7 @@ class SuperViewController: UIViewController {
         case login
         case home
         case weeklyReport
+        case notice
     }
     
     override func viewDidLoad() {
@@ -48,7 +49,7 @@ class SuperViewController: UIViewController {
             )
             vc.navigationItem.rightBarButtonItem = rightBarButton
             break
-        case .weeklyReport:
+        case .weeklyReport, .notice:
             let leftBarButton = UIBarButtonItem(title: "戻る", style: .plain, target: self, action: #selector(SuperViewController.tappedLeftBarButton))
             leftBarButton.setTitleTextAttributes(
                 [NSAttributedStringKey.font: UIFont(name: BASE_FONT, size: 18)!], for: .normal

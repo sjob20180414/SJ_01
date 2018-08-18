@@ -8,20 +8,23 @@
 
 import UIKit
 
-class NoticeViewController: UIViewController {
+class NoticeViewController: SuperViewController,UITableViewDelegate,UITableViewDataSource{
+   
+    
 
+    
     @IBOutlet weak var viewConstraint: NSLayoutConstraint!
-    @IBOutlet weak var weeklyReportTableView: UITableView!
+    @IBOutlet weak var TableView: UITableView!
     @IBOutlet weak var confirmationButtonView: UIView!
-    var testData: Array<WeeklyReportItem>?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.navigationItem.title = "お知らせ一覧"
+        self.navigationItem.title = "お知らせ"
+        setNavigationButton(vc: self, type: .notice)
         
-        // Do any additional setup after loading the view.
+    
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,15 +32,53 @@ class NoticeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func tappedLeftBarButton() {
+        self.dismiss(animated: true, completion: nil)
     }
-    */
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "NoticeDetailCell") as! NoticeDetailCell
+        return cell
+    }
+    
+    
+    func getTestData() -> Array<Notice> {
+        var data: Array<Notice> = []
+        let notice1 = Notice()
+        let notice2 = Notice()
+        
+        notice1.id = ""
+        notice1.important = 1
+        notice1.date = "12月4日"
+        notice1.message = "重要なメッセージ"
+        
+        notice2.id = ""
+        notice2.important = 0
+        notice2.date = "12月3日"
+        notice2.message = "普通のメッセージ"
+        
+        data.append(notice1)
+        data.append(notice2)
+        
+        return data
+    }
+    
 
+}
+
+class NoticeDetailCell: UITableViewCell {
+//        @IBOutlet weak var dateLabel: UILabel!
+//        @IBOutlet weak var messageLabel: UILabel!
+    
+        override func awakeFromNib() {
+            super.awakeFromNib()
+        }
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+    }
+    
 }

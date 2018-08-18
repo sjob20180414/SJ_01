@@ -119,7 +119,7 @@
                                                         </connections>
                                                     </tableView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="お知らせ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MEo-Yu-nph">
-                                                        <rect key="frame" x="20" y="12" width="274" height="17"/>
+                                                        <rect key="frame" x="20" y="12" width="274" height="20"/>
                                                         <fontDescription key="fontDescription" name="cinecaption" family="cinecaption" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -271,7 +271,7 @@
                                                 <rect key="frame" x="50" y="520" width="314" height="100"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GROUP SESSION" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RUP-QV-5wR">
-                                                        <rect key="frame" x="49.999999999999986" y="15" width="214.66666666666663" height="40"/>
+                                                        <rect key="frame" x="22.666666666666686" y="15" width="269" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="nmX-TM-8XB"/>
                                                         </constraints>
