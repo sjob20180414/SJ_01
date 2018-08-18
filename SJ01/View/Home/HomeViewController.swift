@@ -31,6 +31,12 @@ class HomeViewController: SuperViewController, UITableViewDelegate, UITableViewD
         return self.testData!.count;
     }
     
+    @IBAction func noticeButtonTap(_ sender: Any) {
+        let storyboard: UIStoryboard = UIStoryboard(name: "Notice",bundle:nil)
+        let view = storyboard.instantiateViewController(withIdentifier: "NoticeView")as!NoticeViewController
+        self.present(UINavigationController(rootViewController: view),animated: true, completion: nil)
+    }
+    
     @IBAction func weeklyReportButtonTap(_ sender: Any) {
         let storyboard: UIStoryboard = UIStoryboard(name: "WeeklyReport",bundle:nil)
         let view = storyboard.instantiateViewController(withIdentifier: "WeeklyReportView")as! WeeklyReportViewController

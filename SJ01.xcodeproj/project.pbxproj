@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1617B5EF20BA830700DEE046 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1617B5EE20BA830700DEE046 /* HomeViewController.swift */; };
 		1617B5F120BA833500DEE046 /* HomeView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1617B5F020BA833500DEE046 /* HomeView.storyboard */; };
+		16E74CE921269E61001621E2 /* NoticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E74CE821269E61001621E2 /* NoticeViewController.swift */; };
+		16E74CEB2126A280001621E2 /* Notice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16E74CEA2126A280001621E2 /* Notice.storyboard */; };
 		A8109C3E608DC5B3B0E6BBEB /* Pods_SJ01.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C1FC7352E5755D08257D168 /* Pods_SJ01.framework */; };
 		DC59051820DE0D5600C3ECBE /* ColorConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC59051720DE0D5600C3ECBE /* ColorConst.swift */; };
 		DC62E18A208219F1004D57A5 /* LoginView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC62E189208219F1004D57A5 /* LoginView.storyboard */; };
@@ -29,7 +31,6 @@
 		DCA72E95208214D200057BA3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA72E94208214D200057BA3 /* User.swift */; };
 		DCAC463B20DDFE220020727A /* SuperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAC463A20DDFE220020727A /* SuperViewController.swift */; };
 		DCD525FC2115237A0045C848 /* cinecaption227.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DCD525FB2115232B0045C848 /* cinecaption227.ttf */; };
-		DCD525FF211538210045C848 /* NoticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD525FE211538210045C848 /* NoticeViewController.swift */; };
 		DCD526012115504C0045C848 /* WeeklyReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD526002115504C0045C848 /* WeeklyReport.swift */; };
 		DCD52604211559950045C848 /* WeeklyReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD52603211559950045C848 /* WeeklyReportViewController.swift */; };
 		DCD5260621155DF60045C848 /* WeeklyReport.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCD5260521155DF60045C848 /* WeeklyReport.storyboard */; };
@@ -44,6 +45,8 @@
 /* Begin PBXFileReference section */
 		1617B5EE20BA830700DEE046 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		1617B5F020BA833500DEE046 /* HomeView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeView.storyboard; sourceTree = "<group>"; };
+		16E74CE821269E61001621E2 /* NoticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeViewController.swift; sourceTree = "<group>"; };
+		16E74CEA2126A280001621E2 /* Notice.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Notice.storyboard; sourceTree = "<group>"; };
 		6B6BC102A9B04F21FBC8F2F2 /* Pods-SJ01.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SJ01.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SJ01/Pods-SJ01.debug.xcconfig"; sourceTree = "<group>"; };
 		9C1FC7352E5755D08257D168 /* Pods_SJ01.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SJ01.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF6437D2ABB6DB0A0ACA4E7C /* Pods-SJ01.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SJ01.release.xcconfig"; path = "Pods/Target Support Files/Pods-SJ01/Pods-SJ01.release.xcconfig"; sourceTree = "<group>"; };
@@ -68,7 +71,6 @@
 		DCA72E94208214D200057BA3 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DCAC463A20DDFE220020727A /* SuperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperViewController.swift; sourceTree = "<group>"; };
 		DCD525FB2115232B0045C848 /* cinecaption227.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = cinecaption227.ttf; sourceTree = "<group>"; };
-		DCD525FE211538210045C848 /* NoticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeViewController.swift; sourceTree = "<group>"; };
 		DCD526002115504C0045C848 /* WeeklyReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyReport.swift; sourceTree = "<group>"; };
 		DCD52603211559950045C848 /* WeeklyReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyReportViewController.swift; sourceTree = "<group>"; };
 		DCD5260521155DF60045C848 /* WeeklyReport.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WeeklyReport.storyboard; sourceTree = "<group>"; };
@@ -221,7 +223,8 @@
 		DCD525FD211537F80045C848 /* Notice */ = {
 			isa = PBXGroup;
 			children = (
-				DCD525FE211538210045C848 /* NoticeViewController.swift */,
+				16E74CE821269E61001621E2 /* NoticeViewController.swift */,
+				16E74CEA2126A280001621E2 /* Notice.storyboard */,
 			);
 			path = Notice;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 			files = (
 				DCE84EBA2116706E00173ADC /* SlideMenuView.storyboard in Resources */,
 				DCD525FC2115237A0045C848 /* cinecaption227.ttf in Resources */,
+				16E74CEB2126A280001621E2 /* Notice.storyboard in Resources */,
 				1617B5F120BA833500DEE046 /* HomeView.storyboard in Resources */,
 				DC831A532081D9C000D76A56 /* LaunchScreen.storyboard in Resources */,
 				DCD5260621155DF60045C848 /* WeeklyReport.storyboard in Resources */,
@@ -406,11 +410,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16E74CE921269E61001621E2 /* NoticeViewController.swift in Sources */,
 				DCA72E8B208213AF00057BA3 /* RemoteDataManager.swift in Sources */,
 				DC59051820DE0D5600C3ECBE /* ColorConst.swift in Sources */,
 				DCA72E8D208213AF00057BA3 /* LocalDataManager.swift in Sources */,
 				DCA72E912082143000057BA3 /* Custom.swift in Sources */,
-				DCD525FF211538210045C848 /* NoticeViewController.swift in Sources */,
 				DCA72E922082143000057BA3 /* ApiUtils.swift in Sources */,
 				DCA72E8C208213AF00057BA3 /* DataManager.swift in Sources */,
 				DCD52604211559950045C848 /* WeeklyReportViewController.swift in Sources */,
