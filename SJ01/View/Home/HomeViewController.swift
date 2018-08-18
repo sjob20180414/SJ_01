@@ -27,10 +27,6 @@ class HomeViewController: SuperViewController, UITableViewDelegate, UITableViewD
         super.didReceiveMemoryWarning()
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.testData!.count;
-    }
-    
     @IBAction func noticeButtonTap(_ sender: Any) {
         let storyboard: UIStoryboard = UIStoryboard(name: "Notice",bundle:nil)
         let view = storyboard.instantiateViewController(withIdentifier: "NoticeView")as!NoticeViewController
@@ -45,6 +41,10 @@ class HomeViewController: SuperViewController, UITableViewDelegate, UITableViewD
     
     @IBAction func chatButtonTap(_ sender: UIButton) {
         testDialog(sender: sender)
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.testData!.count;
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
