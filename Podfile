@@ -6,7 +6,7 @@ target 'SJ01' do
   use_frameworks!
 
 pod 'RealmSwift’, '~> 2.10.2’
-pod ‘ObjectMapper’
+# pod ‘ObjectMapper’
 pod 'SlideMenuControllerSwift'
 pod 'GoogleSignIn'
 

@@ -7,7 +7,7 @@
 //
 
 import RealmSwift
-import ObjectMapper
+//import ObjectMapper
 
 class WeeklyReportItem: Object {
     
@@ -32,26 +32,26 @@ enum InputType: Int {
     case number = 4
 }
 
-class WeeklyReportItemObject: Mappable {
-    
-    var id = ""
-    var order = 0
-    var title = ""
-    var inputType = InputType.text.rawValue
-    var text = ""
-    var createdAt = 0
-    var updatedAt = 0
-    
-    required init?(map: Map) {
-    }
-    
-    func mapping(map: Map) {
-        id <- map["id"]
-        order <- map["order"]
-        title <- map["title"]
-        inputType <- map["inputType"]
-        text <- map["text"]
-        createdAt <- map["created_at"]
-        updatedAt <- map["updated_at"]
-    }
-}
+//class WeeklyReportItemObject: Mappable {
+//    
+//    var id = ""
+//    var order = 0
+//    var title = ""
+//    var inputType = InputType.text.rawValue
+//    var text = ""
+//    var createdAt = 0
+//    var updatedAt = 0
+//    
+//    required init?(map: Map) {
+//    }
+//    
+//    func mapping(map: Map) {
+//        id <- map["id"]
+//        order <- map["order"]
+//        title <- map["title"]
+//        inputType <- map["inputType"]
+//        text <- map["text"]
+//        createdAt <- map["created_at"]
+//        updatedAt <- map["updated_at"]
+//    }
+//}

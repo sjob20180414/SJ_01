@@ -7,7 +7,7 @@
 //
 
 import RealmSwift
-import ObjectMapper
+//import ObjectMapper
 
 class User: Object {
     
@@ -36,29 +36,29 @@ class User: Object {
     }
 }
 
-class UserObject: Mappable {
-    
-    var id = ""
-    var name = ""
-    
-    var googleUserID = ""
-    var googleFullName = ""
-    var googleIdToken = ""
-    var googleName = ""
-    var googleGivenName = ""
-    var googleFamilyName = ""
-    var googleEmail = ""
-    
-    var createdAt = 0
-    
-    required init?(map: Map) {
-    }
-    
-    func mapping(map: Map) {
-        id <- map["id"]
-        name <- map["name"]
-        
-        createdAt <- map["created_at"]
-    }
-}
+//class UserObject: Mappable {
+//    
+//    var id = ""
+//    var name = ""
+//    
+//    var googleUserID = ""
+//    var googleFullName = ""
+//    var googleIdToken = ""
+//    var googleName = ""
+//    var googleGivenName = ""
+//    var googleFamilyName = ""
+//    var googleEmail = ""
+//    
+//    var createdAt = 0
+//    
+//    required init?(map: Map) {
+//    }
+//    
+//    func mapping(map: Map) {
+//        id <- map["id"]
+//        name <- map["name"]
+//        
+//        createdAt <- map["created_at"]
+//    }
+//}
 

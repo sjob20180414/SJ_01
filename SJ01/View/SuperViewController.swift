@@ -54,6 +54,7 @@ class SuperViewController: UIViewController {
                 [NSAttributedStringKey.font: UIFont(name: BASE_FONT, size: 18)!], for: .normal
             )
             vc.navigationItem.leftBarButtonItem = leftBarButton
+            break
         default:
             break
         }

@@ -19,7 +19,6 @@ PODS:
   - GTMSessionFetcher/Core (1.1.12)
   - GTMSessionFetcher/Full (1.1.12):
     - GTMSessionFetcher/Core (= 1.1.12)
-  - ObjectMapper (3.1.0)
   - Realm (2.10.2):
     - Realm/Headers (= 2.10.2)
   - Realm/Headers (2.10.2)
@@ -29,7 +28,6 @@ PODS:
 
 DEPENDENCIES:
   - GoogleSignIn
-  - ObjectMapper
   - RealmSwift (~> 2.10.2)
   - SlideMenuControllerSwift
 
@@ -39,7 +37,6 @@ SPEC REPOS:
     - GoogleToolboxForMac
     - GTMOAuth2
     - GTMSessionFetcher
-    - ObjectMapper
     - Realm
     - RealmSwift
     - SlideMenuControllerSwift
@@ -49,11 +46,10 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
   GTMOAuth2: c77fe325e4acd453837e72d91e3b5f13116857b2
   GTMSessionFetcher: ebaa1f79a5366922c1735f1566901f50beba23b7
-  ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
   Realm: 0ef72b837fb67e9f4b098bac771ddd72c7fdbb69
   RealmSwift: 07a9ae0505091eda6b2ee7c190c3786d6e90a7b0
   SlideMenuControllerSwift: 021d6318201c53d4d4d3710517d43d6c556c7dd0
 
-PODFILE CHECKSUM: 412564a3ac4d8eaf257e3865904dfa3c65278e47
+PODFILE CHECKSUM: 05018737aabb480961aeaec0f7a07e70a39e157d
 
 COCOAPODS: 1.5.3

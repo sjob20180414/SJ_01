@@ -93,12 +93,12 @@ class LoginViewController: SuperViewController, GIDSignInUIDelegate, GIDSignInDe
                     )
                     return
                 }
-                DataManager().fetchGmailList(accessToken: (auth?.accessToken)!, completion: {(success) in
-                    if success {
-                    } else {
-                        
-                    }
-                })
+//                DataManager().fetchGmailList(accessToken: (auth?.accessToken)!, completion: {(success) in
+//                    if success {
+//                    } else {
+//
+//                    }
+//                })
             }
         }
     }
@@ -116,13 +116,13 @@ class LoginViewController: SuperViewController, GIDSignInUIDelegate, GIDSignInDe
 //
 //            }
 //        })
-        let userId = userModel.fetchFirst()?.googleUserID
-        DataManager().fetchGmailList(accessToken: userId!, completion: {(success) in
-            if success {
-            } else {
-                
-            }
-        })
+//        let userId = userModel.fetchFirst()?.googleUserID
+//        DataManager().fetchGmailList(accessToken: userId!, completion: {(success) in
+//            if success {
+//            } else {
+//
+//            }
+//        })
     }
 }
 

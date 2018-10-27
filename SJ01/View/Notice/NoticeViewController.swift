@@ -5,10 +5,10 @@
 //  Created by Yudai Terashita on 2018/08/17.
 //  Copyright © 2018年 松井康太郎. All rights reserved.
 //
-
+import Foundation
 import UIKit
 
-class NoticeViewController: UIViewController {
+class NoticeViewController: SuperViewController {
 
     @IBOutlet weak var viewConstraint: NSLayoutConstraint!
     @IBOutlet weak var weeklyReportTableView: UITableView!

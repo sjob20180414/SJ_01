@@ -29,7 +29,7 @@ class HomeViewController: SuperViewController, UITableViewDelegate, UITableViewD
     
     @IBAction func noticeButtonTap(_ sender: Any) {
         let storyboard: UIStoryboard = UIStoryboard(name: "Notice",bundle:nil)
-        let view = storyboard.instantiateViewController(withIdentifier: "NoticeView")as!NoticeViewController
+        let view = storyboard.instantiateViewController(withIdentifier: "NoticeView") as! NoticeViewController
         self.present(UINavigationController(rootViewController: view),animated: true, completion: nil)
     }
     
@@ -85,7 +85,7 @@ class HomeViewController: SuperViewController, UITableViewDelegate, UITableViewD
     }
 }
 
-class  NoticeCell: UITableViewCell {
+class NoticeCell: UITableViewCell {
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var messageLabel: UILabel!
     
@@ -98,7 +98,7 @@ class  NoticeCell: UITableViewCell {
     }
 }
 
-class  ImportantNoticeCell: UITableViewCell {
+class ImportantNoticeCell: UITableViewCell {
     @IBOutlet weak var importantLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var messageLabel: UILabel!
