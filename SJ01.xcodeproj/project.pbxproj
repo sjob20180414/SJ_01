@@ -20,6 +20,7 @@
 		DC831A4E2081D9C000D76A56 /* SJ01.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DC831A4C2081D9C000D76A56 /* SJ01.xcdatamodeld */; };
 		DC831A502081D9C000D76A56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC831A4F2081D9C000D76A56 /* Assets.xcassets */; };
 		DC831A532081D9C000D76A56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC831A512081D9C000D76A56 /* LaunchScreen.storyboard */; };
+		DC87DE46218479A5006A9FF4 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC87DE45218479A5006A9FF4 /* Storyboard.storyboard */; };
 		DC8E928E20DE198900F51E40 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8E928D20DE198900F51E40 /* CustomNavigationBar.swift */; };
 		DC944500211E600B00189A3E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC9444FF211E600B00189A3E /* GoogleService-Info.plist */; };
 		DCA72E832082133900057BA3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA72E822082133900057BA3 /* LoginViewController.swift */; };
@@ -60,6 +61,7 @@
 		DC831A4F2081D9C000D76A56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC831A522081D9C000D76A56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC831A542081D9C000D76A56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC87DE45218479A5006A9FF4 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		DC8E928D20DE198900F51E40 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
 		DC9444FF211E600B00189A3E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		DCA72E822082133900057BA3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 			children = (
 				DCA72E822082133900057BA3 /* LoginViewController.swift */,
 				DC62E189208219F1004D57A5 /* LoginView.storyboard */,
+				DC87DE45218479A5006A9FF4 /* Storyboard.storyboard */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 				16E74CEB2126A280001621E2 /* Notice.storyboard in Resources */,
 				1617B5F120BA833500DEE046 /* HomeView.storyboard in Resources */,
 				DC831A532081D9C000D76A56 /* LaunchScreen.storyboard in Resources */,
+				DC87DE46218479A5006A9FF4 /* Storyboard.storyboard in Resources */,
 				DCD5260621155DF60045C848 /* WeeklyReport.storyboard in Resources */,
 				DC831A502081D9C000D76A56 /* Assets.xcassets in Resources */,
 				DC831A4B2081D9C000D76A56 /* Main.storyboard in Resources */,
